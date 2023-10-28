@@ -1,0 +1,12 @@
+---
+const { title, href, icon } = Astro.props;
+import { HomeIcon } from "@heroicons/react/24/outline";
+---
+
+<button
+  type="button"
+  class="inline-flex items-center gap-x-2 rounded-full bg-transparent border-2 px-3 py-1 font-bold text-[16px] focus-visible:outline hover:bg-primary hover:text-white transition-colors duration-200 ease-in-out"
+>
+  {icon && <HomeIcon className="h-6 w-6" />}
+  <slot />
+</button>
