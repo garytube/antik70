@@ -2,6 +2,15 @@
 export default {
 	content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
 	theme: {
+		extend: {
+			borderRadius: {
+				'text': '1em',
+			},
+			screens: {
+				'2xl': '1536px',
+				// => @media (min-width: 1536px) { ... }
+			}
+		},
 		colors: {
 			transparent: 'transparent',
 			current: 'currentColor',
