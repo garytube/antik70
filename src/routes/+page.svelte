@@ -1,6 +1,13 @@
-<main class="px-8 lg:container">
-	s Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat maxime iusto sapiente veniam
-	rem voluptatibus, quidem ad nulla maiores beatae nihil inventore perspiciatis natus eos dolore,
-	deserunt qui recusandae consequuntur?
-	<!-- cotentent -->
-</main>
+<script>
+	import Hero from './../lib/sections/Hero.svelte';
+</script>
+
+<svelte:head>
+	<title>Antik70 - Zeitlose Eleganz</title>
+	<meta
+		name="description"
+		content="Jedes Möbelstück erzählt eine Geschichte vergangener Epochen, mit Liebe restauriert und bereit, Ihr Zuhause mit zeitloser Eleganz zu schmücken. Tauchen Sie ein in unsere Welt, in der Geschichte und Stil sich vereinen. "
+	/>
+</svelte:head>
+
+<Hero />

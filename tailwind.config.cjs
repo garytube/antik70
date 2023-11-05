@@ -7,6 +7,11 @@ const config = {
 			borderRadius: {
 				text: '1em'
 			},
+			container: {
+				screens: {
+					'2xl': '1640px'
+				}
+			},
 			screens: {
 				'2xl': '1536px'
 				// => @media (min-width: 1536px) { ... }
@@ -15,14 +20,17 @@ const config = {
 		colors: {
 			transparent: 'transparent',
 			current: 'currentColor',
-			primary: '#372922',
+			primary: {
+				DEFAULT: '#372922',
+				DARK: '#21130C'
+			},
 			beige: '#F7ECE4',
 			white: '#fff',
 			highlight: '#DEAA82'
 		},
 		fontFamily: {
 			sans: ['Source Sans Pro', 'sans-serif'],
-			serif: ['Playfair Display Variable', 'serif']
+			serif: ['Playfair Display', 'serif']
 		},
 		container: {
 			center: true,

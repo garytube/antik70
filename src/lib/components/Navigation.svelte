@@ -46,14 +46,10 @@
 		</li>
 	{/each}
 
-	<li class="xl:ml-auto-"><ShopButton>Online Shop</ShopButton></li>
+	<li class="xl:w-full xl:text-right"><ShopButton>Online Shop</ShopButton></li>
 </ul>
 
-<MobileMenuButton
-	on:click={toggleMenue}
-	open={mobileNavVisable}
-	class="absolute z-50 top-0 right-4 flex items-center lg:hidden"
-/>
+<MobileMenuButton on:click={toggleMenue} open={mobileNavVisable} class="absolute z-50 top-0 right-4 flex items-center lg:hidden" />
 <MobileNav bind:mobileNavVisable>
 	{#each links as { label, href } (label)}
 		<li>
