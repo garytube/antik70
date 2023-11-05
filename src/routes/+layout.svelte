@@ -4,8 +4,10 @@
 	import '../app.postcss';
 	import '@fontsource/source-sans-pro';
 	import '@fontsource/playfair-display';
+	import TailwindDebug from '$lib/components/tailwind_debug.svelte';
 </script>
 
+<TailwindDebug></TailwindDebug>
 <header class="px-8 lg:container relative flex mt-16 mb-8">
 	<Logo />
 	<Navigation />

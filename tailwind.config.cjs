@@ -4,13 +4,11 @@ const config = {
 
 	theme: {
 		extend: {
+			gridTemplateColumns: {
+				'hero': 'minmax(250px, 1fr) 1fr',
+			},
 			borderRadius: {
 				text: '1em'
-			},
-			container: {
-				screens: {
-					'2xl': '1640px'
-				}
 			},
 			screens: {
 				'2xl': '1536px'
@@ -20,6 +18,7 @@ const config = {
 		colors: {
 			transparent: 'transparent',
 			current: 'currentColor',
+			black: '#000',
 			primary: {
 				DEFAULT: '#372922',
 				DARK: '#21130C'
