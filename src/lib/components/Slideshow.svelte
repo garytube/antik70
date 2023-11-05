@@ -2,7 +2,7 @@
 </script>
 
 <div
-	class="block lg:ml-auto slideshow h-[300px] w-full lg:h-[550px] xl:max-w-[533px] xl:h-[750px] border-[6px] md:rounded-lg border-primary-DARK"
+	class="block lg:ml-auto slideshow w-full h-[300px] md:h-[450px] lg:h-[550px] xl:max-w-[533px] xl:h-[750px] border-[6px] md:rounded-lg border-primary-DARK"
 >
 	<div class="relative w-full h-full">
 		<div class="absolute top-0 left-0 w-full h-full">

@@ -7,7 +7,7 @@
 <section id="home" class=" lg:container lg:mx-auto xl:pt-12 mb-8 md:mb-20 lg:mb-32">
 	<div class="grid items-center gap-6 sm:gap-12 lg:gap-6 xl:gap-4 2xl:gap-0 md:grid-cols-hero lg:grid-cols-2">
 		<!-- hero text -->
-		<div class="mx-6 md:ml-6 order-2 md:order-1">
+		<div class="mx-6 lg:mx-0 order-2 md:order-1">
 			<H1>Zeitlose Eleganz durch Antiquitäten, Einzigartige Lampen & Möbelkunst.</H1>
 			<H3>
 				Jedes Möbelstück erzählt eine Geschichte vergangener Epochen, mit Liebe restauriert und bereit, Ihr Zuhause mit zeitloser Eleganz zu
@@ -29,7 +29,7 @@
 		</div>
 
 		<!-- hero image -->
-		<div class="md:mx-6 order-1 md:order-1">
+		<div class=" order-1 md:order-1">
 			<Slideshow />
 		</div>
 	</div>
