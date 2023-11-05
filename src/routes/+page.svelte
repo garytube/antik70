@@ -1,4 +1,5 @@
 <script>
+	import Lamps from '$lib/sections/Lamps.svelte';
 	import Hero from './../lib/sections/Hero.svelte';
 </script>
 
@@ -11,3 +12,4 @@
 </svelte:head>
 
 <Hero />
+<Lamps />
