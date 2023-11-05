@@ -1,1 +1,3 @@
-<h1 class="text-5xl font-bold leading-[64px] mb-12 text-primary font-serif {$$props.class}"><slot /></h1>
+<h2 class="text-3xl md:text-4xl lg:text-5xl lg:leading-[64px] leading-snug font-bold mb-8 lg:mb-10 text-primary font-sans {$$props.class}">
+	<slot />
+</h2>
