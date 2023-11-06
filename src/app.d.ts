@@ -5,6 +5,7 @@ declare global {
 		// interface Error {}
 		interface Locals {
 			auth: import('lucia').AuthRequest;
+			prisma: import('@prisma/client').PrismaClient;
 		}		// interface PageData {}
 		// interface Platform {}
 	}
@@ -13,6 +14,7 @@ declare global {
 		type DatabaseUserAttributes = {
 			username: string;
 		};
+		// eslint-disable-next-line 
 		type DatabaseSessionAttributes = {};
 	}
 }
