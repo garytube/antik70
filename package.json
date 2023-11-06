@@ -46,6 +46,7 @@
 		"@fontsource/source-sans-pro": "^5.0.8",
 		"@lucia-auth/adapter-prisma": "^3.0.2",
 		"@prisma/client": "5.5.2",
+		"@sveltejs/adapter-vercel": "^3.0.3",
 		"lucia": "^2.7.3"
 	}
 }
