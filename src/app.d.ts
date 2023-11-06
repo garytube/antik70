@@ -6,17 +6,17 @@ declare global {
 		interface Locals {
 			auth: import('lucia').AuthRequest;
 			prisma: import('@prisma/client').PrismaClient;
-		}		// interface PageData {}
+		} // interface PageData {}
 		// interface Platform {}
 	}
 	namespace Lucia {
-		type Auth = import("$lib/server/lucia").Auth;
+		type Auth = import('$lib/server/lucia').Auth;
 		type DatabaseUserAttributes = {
 			username: string;
 		};
-		// eslint-disable-next-line 
+		// eslint-disable-next-line
 		type DatabaseSessionAttributes = {};
 	}
 }
 
-export { };
+export {};
