@@ -4,7 +4,7 @@
 	import LinkButton from '$lib/components/LinkButton.svelte';
 </script>
 
-<section id="home" class="xl:pt-12 mb-32 bg-beige bg-gradient-to-b from-[#733d2422] to-20% to-transparent">
+<section id="foo" class="xl:pt-12 mb-32 bg-beige bg-gradient-to-b from-[#733d2422] to-20% to-transparent">
 	<div class="container mx-auto py-8 md:py-16">
 		<H2 class="sm:text-center">Vielfalt, Eleganz und Einzigartigkeit:<br />Unsere Lampenwelt</H2>
 		<P class="sm:text-center leading-relaxed  lg:max-w-5xl mx-auto">
