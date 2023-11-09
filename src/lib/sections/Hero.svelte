@@ -15,7 +15,7 @@
 				schmücken. Tauchen Sie ein in unsere Welt, in der Geschichte und Stil sich vereinen.
 			</H3>
 			<a
-				href="#foo"
+				href=""
 				class="text-lg lg:text-xl mt-8 2xl:mt-10 shadow-lg pl-4 pr-2 lg:pr-4 flex flex-row items-center max-w-max btn h-10 lg:h-14 rounded-xl lg:rounded-2xl bg-primary text-white hover:bg-highlight hover:text-primary whitespace-nowrap"
 			>
 				Entdecken Sie unsere Raritäten

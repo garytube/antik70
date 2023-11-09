@@ -18,14 +18,13 @@
 		"db:push": "prisma db push",
 		"db:generate": "prisma generate",
 		"db:seed": "prisma db seed",
-		"i-changed-the-schema": "pnpm run db:push && pnpm run db:generate",
-		"postinstall": "pnpm db:push && pnpm db:generate"
+		"i-changed-the-schema": "pnpm run db:push && pnpm run db:generate"
 	},
 	"devDependencies": {
 		"@playwright/test": "^1.39.0",
 		"@sveltejs/adapter-auto": "^2.1.1",
 		"@sveltejs/adapter-cloudflare": "^2.3.3",
-		"@sveltejs/kit": "^1.27.3",
+		"@sveltejs/kit": "^1.27.4",
 		"@tailwindcss/typography": "^0.5.10",
 		"@typescript-eslint/eslint-plugin": "^6.9.1",
 		"@typescript-eslint/parser": "^6.9.1",
@@ -44,17 +43,14 @@
 		"tslib": "^2.6.2",
 		"typescript": "^5.2.2",
 		"vite": "^4.5.0",
-		"vitest": "^0.34.6",
-		"wrangler": "^3.15.0"
+		"vitest": "^0.34.6"
 	},
 	"type": "module",
 	"dependencies": {
 		"@fontsource-variable/playfair-display": "^5.0.18",
 		"@fontsource/playfair-display": "^5.0.17",
 		"@fontsource/source-sans-pro": "^5.0.8",
-		"@lucia-auth/adapter-prisma": "^3.0.2",
 		"@prisma/client": "5.5.2",
-		"@sveltejs/adapter-vercel": "^3.0.3",
-		"lucia": "^2.7.3"
+		"@sveltejs/adapter-vercel": "^3.0.3"
 	}
 }
