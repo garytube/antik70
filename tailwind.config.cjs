@@ -10,6 +10,9 @@ const config = {
 			borderRadius: {
 				text: '1em'
 			},
+			fontSize: {
+				'6xl': ['58px', '72px']
+			},
 			screens: {
 				'2xl': '1536px'
 				// => @media (min-width: 1536px) { ... }
@@ -40,7 +43,9 @@ const config = {
 		}
 	},
 
-	plugins: []
+	plugins: [
+		require('@tailwindcss/typography'),
+	]
 };
 
 module.exports = config;

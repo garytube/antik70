@@ -2,9 +2,10 @@
 	import H1 from '$lib/components/H1.svelte';
 	import H3 from '$lib/components/H3.svelte';
 	import Slideshow from '$lib/components/Slideshow.svelte';
+	export let id = '';
 </script>
 
-<section id="home" class=" lg:container lg:mx-auto xl:pt-12 mb-8 md:mb-20 lg:mb-32">
+<section {id} class=" lg:container lg:mx-auto xl:pt-12 mb-8 md:mb-20 lg:mb-32">
 	<div class="grid items-center gap-6 sm:gap-12 lg:gap-6 xl:gap-4 2xl:gap-0 md:grid-cols-hero lg:grid-cols-2">
 		<!-- hero text -->
 		<div class="mx-6 lg:mx-0 order-2 md:order-1">
