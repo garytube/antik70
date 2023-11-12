@@ -15,6 +15,23 @@ export const SITE = {
     MEGA_SUBLINE: '	Wir sind Experten für Reparaturen und Restaurationen. Sie können sich darauf verlassen, dass wir Ihre Möbel in ihren ursprünglichen Glanz versetzen oder sie in etwas Neues und Aufregendes verwandeln können.',
     MEGA_CONTACT: 'Zögern Sie nicht, uns zu kontaktieren!',
     MEGA_CTA: 'Unser Reperatur Service',
+    FOOTER: {
+      Antik70: [
+        { name: 'Kontakt', href: '/kontakt' },
+        { name: 'Über uns', href: '/ueber-uns' },
+        { name: 'Impressum', href: '/impressum' }
+      ],
+      'Unser Shop': [
+        { name: 'Öffnungszeiten', href: '/' },
+        { name: 'Repeatur Service', href: '/' },
+        { name: 'Probwohnen', href: '/' }
+      ],
+      Informationen: [
+        { name: 'Zahlarten & Versandskosten', href: '/' },
+        { name: 'Unsere AGBs', href: '/' },
+        { name: 'Wiederrufsrecht', href: '/' }
+      ]
+    }
   },
 
 

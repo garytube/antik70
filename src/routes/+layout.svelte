@@ -1,4 +1,5 @@
 <script>
+	import Footer from '$section/Footer.svelte';
 	import Navigation from '$lib/components/Navigation.svelte';
 	import Logo from '$lib/components/Logo.svelte';
 	import '../app.postcss';
@@ -14,6 +15,8 @@
 </header>
 
 <slot />
+
+<Footer />
 
 <style lang="postcss">
 	:global(html) {

@@ -5,7 +5,8 @@ const config = {
 	theme: {
 		extend: {
 			gridTemplateColumns: {
-				hero: 'minmax(250px, 1fr) 1fr'
+				hero: 'minmax(250px, 1fr) 1fr',
+				'footer': '230px 230px 230px 1fr',
 			},
 			borderRadius: {
 				text: '1em'
