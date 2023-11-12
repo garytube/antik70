@@ -8,9 +8,6 @@ const config = {
 	preprocess: [vitePreprocess({})],
 
 	kit: {
-		compilerOptions: {
-			enableSourcemap: true
-		},
 		adapter: adapter(),
 		alias: {
 			$const: 'src/_const.ts',
