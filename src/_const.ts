@@ -35,8 +35,8 @@ export const SITE = {
     ],
     FOOTER_LINKS: {
       Antik70: [
-        { name: 'Kontakt', href: '/kontakt' },
-        { name: 'Über uns', href: '/ueber-uns' },
+        { name: 'Kontakt', href: '/' },
+        { name: 'Über uns', href: '/' },
         { name: 'Impressum', href: 'https://antik70.de/shop/de/Impressum' }
       ],
       'Unser Shop': [
