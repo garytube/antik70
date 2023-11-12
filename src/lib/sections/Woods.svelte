@@ -36,7 +36,7 @@
 				Schleifen, Wachsen und Polieren für eine samtig glänzende Optik, sowie die Behebung von Holzwurmschäden und Beschlagreparaturen.
 			</Feature>
 		</div>
-		<div id="keyfacts_pictures" class="relative grid grid-cols-2 items-center gap-12 md:ml-28">
+		<div id="keyfacts_pictures" class=" hidden lg:grid grid-cols-2 items-center gap-12 md:ml-28">
 			<div class="col-1">
 				<img src={Lamp} alt="antik70.de" class="rounded-[49px] border-[3px] border-primary-DARK my-4" />
 				<LinkButton href={SITE.DE.SHOP_LINK}>{SITE.DE.SHOP_TEXT_1}</LinkButton>
@@ -48,10 +48,3 @@
 		</div>
 	</div>
 </Section>
-
-<style>
-	.pic {
-		width: 268px;
-		height: 375px;
-	}
-</style>

@@ -2,7 +2,7 @@
 	import Lamps from '$lib/sections/Lamps.svelte';
 	import Woods from '$lib/sections/Woods.svelte';
 	import Hero from './../lib/sections/Hero.svelte';
-	export let id = '';
+	import Mega from './../lib/sections/Mega.svelte';
 </script>
 
 <svelte:head>
@@ -16,3 +16,4 @@
 <Hero id="home" />
 <Lamps id="lampen" />
 <Woods id="holz-moebel" />
+<Mega id="mega" />
