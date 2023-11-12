@@ -8,7 +8,15 @@ const config = {
 	preprocess: [vitePreprocess({})],
 
 	kit: {
-		adapter: adapter()
+		compilerOptions: {
+			enableSourcemap: true
+		},
+		adapter: adapter(),
+		alias: {
+			$const: 'src/_const.ts',
+			$section: 'src/lib/sections',
+			$assets: 'src/assets',
+		}
 	}
 };
 

@@ -1,12 +1,17 @@
 <script lang="ts">
 	// Link URL
 	export let href: string;
+	export let alternate: boolean = false;
 </script>
 
 <a
 	{href}
 	title={$$props.slot}
-	class="text-xl mx-auto mt-8 shadow-lg px-4 flex flex-row items-center max-w-max btn h-10 rounded-xl bg-primary text-white hover:bg-highlight hover:text-primary"
+	class="text-xl mx-auto mt-8 shadow-lg px-4 flex flex-row items-center max-w-max btn h-10 rounded-xl hover:opacity-80"
+	class:bg-highlight={alternate}
+	class:text-primary={alternate}
+	class:bg-primary={!alternate}
+	class:text-white={!alternate}
 >
 	<slot />
 </a>

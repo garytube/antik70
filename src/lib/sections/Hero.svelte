@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { SITE } from '$const';
 	import H1 from '$lib/components/H1.svelte';
 	import H3 from '$lib/components/H3.svelte';
 	import Slideshow from '$lib/components/Slideshow.svelte';
@@ -9,16 +10,15 @@
 	<div class="grid items-center gap-6 sm:gap-12 lg:gap-6 xl:gap-4 2xl:gap-0 md:grid-cols-hero lg:grid-cols-2">
 		<!-- hero text -->
 		<div class="mx-6 lg:mx-0 order-2 md:order-1">
-			<H1>Zeitlose Eleganz durch Antiquitäten, Einzigartige Lampen & Möbelkunst.</H1>
+			<H1>{SITE.DE.HERO_HEADLINE}</H1>
 			<H3>
-				Jedes Möbelstück erzählt eine Geschichte vergangener Epochen, mit Liebe restauriert und bereit, Ihr Zuhause mit zeitloser Eleganz zu
-				schmücken. Tauchen Sie ein in unsere Welt, in der Geschichte und Stil sich vereinen.
+				{SITE.DE.HERO_SUBLINE}
 			</H3>
 			<a
-				href=""
+				href="#lampen"
 				class="text-lg lg:text-xl mt-8 2xl:mt-10 shadow-lg pl-4 pr-2 lg:pr-4 flex flex-row items-center max-w-max btn h-10 lg:h-14 rounded-xl lg:rounded-2xl bg-primary text-white hover:bg-highlight hover:text-primary whitespace-nowrap"
 			>
-				Entdecken Sie unsere Raritäten
+				{SITE.DE.HERO_CTA}
 				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class=" fill-current ml-2 xl:ml-3 2xl:ml-4 h-6 lg:h-8">
 					<path
 						fill-rule="evenodd"

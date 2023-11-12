@@ -3,6 +3,7 @@
 	import P from '$lib/components/P.svelte';
 	import LinkButton from '$lib/components/LinkButton.svelte';
 	import Section from '$lib/components/Section.svelte';
+	import { SITE } from '$const';
 	export let id = '';
 	const demo = [
 		'https://images.unsplash.com/photo-1544691560-fc2053d97726?auto=format&fit=crop&q=80&w=3870&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
@@ -12,15 +13,12 @@
 </script>
 
 <Section {id}>
-	<H2 class="sm:text-center">Vielfalt, Eleganz und Einzigartigkeit:<br />Unsere Lampenwelt</H2>
+	<H2 class="sm:text-center">{SITE.DE.LAMP_HEADLINE}</H2>
 	<P class="sm:text-center leading-relaxed  lg:max-w-5xl mx-auto">
-		Entdecken Sie bei uns ein umfangreiches Sortiment an Lampen, das keine Wünsche offen lässt. Von der zeitlosen Eleganz unserer
-		Tiffany-Lampen bis hin zu unseren höhenverstellbaren Zug- und Pendelleuchten, Plafonieren, Wandlampen und edlen Tisch- und Stehleuchten
-		aus Messing. Jede Lampe durchläuft eine Aufarbeitung, wird neu elektrifiziert und erfüllt höchste<br /><span>Sicherheitsstandards</span
-		>.
+		{SITE.DE.LAMP_SUBLINE}
 	</P>
 	<LinkButton href="#">
-		Unsere Lampen
+		{SITE.DE.LAMP_CTA}
 		<svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 ml-1" viewBox="0 0 16.692 22.499">
 			<path
 				id="Path_11"

@@ -1,8 +1,9 @@
 <script>
-	import Lamps from '$lib/sections/Lamps.svelte';
-	import Woods from '$lib/sections/Woods.svelte';
-	import Hero from './../lib/sections/Hero.svelte';
-	import Mega from './../lib/sections/Mega.svelte';
+	import Lamps from '$section/Lamps.svelte';
+	import Woods from '$section/Woods.svelte';
+	import Hero from '$section/Hero.svelte';
+	import Mega from '$section/Mega.svelte';
+	import AboutUs from '$section/AboutUs.svelte';
 </script>
 
 <svelte:head>
@@ -17,3 +18,4 @@
 <Lamps id="lampen" />
 <Woods id="holz-moebel" />
 <Mega id="mega" />
+<AboutUs id="antik70" />
