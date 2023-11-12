@@ -17,5 +17,5 @@
 <Hero id="home" />
 <Lamps id="lampen" />
 <Woods id="holz-moebel" />
-<Mega id="mega" />
+<Mega id="restaurationen" />
 <AboutUs id="antik70" />

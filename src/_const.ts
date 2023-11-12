@@ -15,7 +15,25 @@ export const SITE = {
     MEGA_SUBLINE: '	Wir sind Experten für Reparaturen und Restaurationen. Sie können sich darauf verlassen, dass wir Ihre Möbel in ihren ursprünglichen Glanz versetzen oder sie in etwas Neues und Aufregendes verwandeln können.',
     MEGA_CONTACT: 'Zögern Sie nicht, uns zu kontaktieren!',
     MEGA_CTA: 'Unser Reperatur Service',
-    FOOTER: {
+    NAVI_LINKS: [
+      {
+        label: 'Lampen',
+        href: '#lampen'
+      },
+      {
+        label: 'Holzmöbel & Rarietäten',
+        href: '#holz-moebel'
+      },
+      {
+        label: 'Restaurationen',
+        href: '#restaurationen'
+      },
+      {
+        label: 'Unsere Geschichte',
+        href: '#antik70'
+      }
+    ],
+    FOOTER_LINKS: {
       Antik70: [
         { name: 'Kontakt', href: '/kontakt' },
         { name: 'Über uns', href: '/ueber-uns' },
@@ -32,6 +50,11 @@ export const SITE = {
         { name: 'Wiederrufsrecht', href: '/' }
       ]
     }
+    , OPEN_HOURS: 'Öffnungszeiten',
+    OPEN_HOURS_1: 'Montag bis Freitag',
+    OPEN_HOURS_2: '11:00 - 18:00 Uhr',
+    OPEN_HOURS_3: 'Neu: Samstag',
+    OPEN_HOURS_4: '11:00 - 14:00 Uhr',
   },
 
 
