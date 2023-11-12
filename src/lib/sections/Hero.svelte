@@ -4,6 +4,10 @@
 	import H3 from '$lib/components/H3.svelte';
 	import Slideshow from '$lib/components/Slideshow.svelte';
 	export let id = '';
+	const pictures = import.meta.glob('/src/assets/lamps/*.{avif,gif,heif,jpeg,jpg,png,tiff,webp}', {
+		eager: true,
+		as: 'url'
+	});
 </script>
 
 <section {id} class=" lg:container lg:mx-auto xl:pt-12 mb-8 md:mb-20 lg:mb-32">
@@ -31,7 +35,7 @@
 
 		<!-- hero image -->
 		<div class=" order-1 md:order-1">
-			<Slideshow />
+			<Slideshow {pictures} />
 		</div>
 	</div>
 </section>

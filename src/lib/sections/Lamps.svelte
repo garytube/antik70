@@ -5,11 +5,9 @@
 	import Section from '$lib/components/Section.svelte';
 	import { SITE } from '$const';
 	export let id = '';
-	const demo = [
-		'https://images.unsplash.com/photo-1544691560-fc2053d97726?auto=format&fit=crop&q=80&w=3870&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-		'https://images.unsplash.com/photo-1600620195943-eb20d00a556f?auto=format&fit=crop&q=80&w=3024&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-		'https://images.unsplash.com/photo-1577176434922-803273eba97a?auto=format&fit=crop&q=80&w=3870&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
-	];
+	import lamp1 from '$assets/lamps/1.jpg';
+	import lamp2 from '$assets/lamps/4.jpg';
+	import lamp3 from '$assets/lamps/3.jpg';
 </script>
 
 <Section {id}>
@@ -36,7 +34,7 @@
 
 	<!-- lampen grid -->
 	<div class="grid mt-16 md:grid-cols-2 lg:grid-cols-3 gap-8">
-		{#each demo as image}
+		{#each [lamp1, lamp2, lamp3] as image}
 			<div class="w-full h-[336px] border-4 border-primary-DARK rounded-xl overflow-hidden">
 				<img class="w-full h-full object-cover" src={image} alt="DEMO" />
 			</div>

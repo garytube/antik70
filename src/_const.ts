@@ -37,7 +37,7 @@ export const SITE = {
       Antik70: [
         { name: 'Kontakt', href: '/kontakt' },
         { name: 'Über uns', href: '/ueber-uns' },
-        { name: 'Impressum', href: '/impressum' }
+        { name: 'Impressum', href: 'https://antik70.de/shop/de/Impressum' }
       ],
       'Unser Shop': [
         { name: 'Öffnungszeiten', href: '/' },
@@ -45,9 +45,9 @@ export const SITE = {
         { name: 'Probwohnen', href: '/' }
       ],
       Informationen: [
-        { name: 'Zahlarten & Versandskosten', href: '/' },
-        { name: 'Unsere AGBs', href: '/' },
-        { name: 'Wiederrufsrecht', href: '/' }
+        { name: 'Zahlarten & Versandskosten', href: 'https://antik70.de/shop/de/Liefer-und-Versandkosten' },
+        { name: 'Unsere AGBs', href: 'https://antik70.de/shop/de/Unsere-AGB' },
+        { name: 'Wiederrufsrecht', href: 'https://antik70.de/shop/de/Widerrufsrecht' }
       ]
     }
     , OPEN_HOURS: 'Öffnungszeiten',

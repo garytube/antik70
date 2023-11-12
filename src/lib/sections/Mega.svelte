@@ -1,6 +1,11 @@
 <script lang="ts">
 	import { SITE } from '$const';
-	import Lamp from '$assets/lamp.jpg';
+	import pic1 from '$assets/lamps/1.jpg';
+	import pic2 from '$assets/lamps/2.jpg';
+	import pic3 from '$assets/lamps/3.jpg';
+	import pic4 from '$assets/lamps/4.jpg';
+	import pic5 from '$assets/lamps/5.jpg';
+
 	import H2 from '$lib/components/H2.svelte';
 	import P from '$lib/components/P.svelte';
 	import LinkButton from '$lib/components/LinkButton.svelte';
@@ -19,11 +24,11 @@
 	</div>
 	<div class="overlay absolute bg-primary-DARK bg-opacity-90 w-full h-full inset-0 z-10"></div>
 	<div class="grid grid-cols-3 grid-rows-2 absolute z-0 w-full h-full">
-		<img class="h-full w-full object-cover" src={Lamp} alt="antik70" />
-		<img class="h-full w-full object-cover" src={Lamp} alt="antik70" />
-		<img class="h-full w-full object-cover" src={Lamp} alt="antik70" />
-		<img class="h-full w-full object-cover" src={Lamp} alt="antik70" />
-		<img class="h-full w-full object-cover" src={Lamp} alt="antik70" />
-		<img class="h-full w-full object-cover" src={Lamp} alt="antik70" />
+		<img class="h-full w-full object-cover" src={pic1} alt="antik70" />
+		<img class="h-full w-full object-cover" src={pic2} alt="antik70" />
+		<img class="h-full w-full object-cover" src={pic3} alt="antik70" />
+		<img class="h-full w-full object-cover" src={pic4} alt="antik70" />
+		<img class="h-full w-full object-cover" src={pic5} alt="antik70" />
+		<img class="h-full w-full object-cover" src={pic1} alt="antik70" />
 	</div>
 </div>

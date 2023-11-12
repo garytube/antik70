@@ -8,7 +8,7 @@
 			<div>
 				<h4 class="text-lg font-bold mb-4">{categorie}</h4>
 				<ul>
-					{#each links as link (link.href)}
+					{#each links as link}
 						<li class="mb-2 last:mb-0 hover:text-highlight"><a href={link.href}>{link.name}</a></li>
 					{/each}
 				</ul>
