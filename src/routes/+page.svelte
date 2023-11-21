@@ -1,8 +1,8 @@
 <script>
-	import Lamps from '$section/Lamps.svelte';
-	import Woods from '$section/Woods.svelte';
+	import Beleuchtung from '$section/Block.svelte';
+	import LampenFeatures from '$section/FeatureBlock.svelte';
 	import Hero from '$section/Hero.svelte';
-	import Mega from '$section/Mega.svelte';
+	import Mega from '$section/MegaBlock.svelte';
 	import AboutUs from '$section/AboutUs.svelte';
 </script>
 
@@ -15,7 +15,7 @@
 </svelte:head>
 
 <Hero id="home" />
-<Lamps id="lampen" />
-<Woods id="holz-moebel" />
+<LampenFeatures id="lampen" />
+<!-- <Beleuchtung id="beleuchtung" /> -->
 <Mega id="restaurationen" />
 <AboutUs id="antik70" />

@@ -40,8 +40,13 @@
 		<div class="col-2">
 			<img src={Store} alt="Gneisenaustraße 70 - 10961 Berlin Kreuzberg" class="rounded-[49px] border-[3px] border-primary-DARK mb-8" />
 			<FeatureBox title="Porzellan" description="Diverse Einzelteile und komplette Service von Hutschenreuther und Rosenthal." cta="Tisch und Wohndekoration" href="/" />
-			<FeatureBox title="Restaurationen " description="Wir führen Reparaturen &  Restaurationen mit höchster Sorgfalt und Fachwissen durch." cta="Antike Möbel & Pflege" href="/" />
-			<FeatureBox title="Ersatzgläser " description="Unsere große Auswahl an alten und neuen Glasschirmen. Teilweise mehr als 100 Jahre alt!" cta="Ersatzgläser" href="/" />
+			<FeatureBox
+				title="Raritäten "
+				description="Sammlerstücke, die nicht jeder hat, außergewöhnliche Gegenstände zum Nutzen oder Dekorieren."
+				cta="Antike Möbel & Pflege"
+				href="/"
+			/>
+			<FeatureBox title="Uhren " description="Unsere kleine aber feine Auswahl an alten Wand - Tisch oder Standuhren." cta="Ersatzgläser" href="/" />
 		</div>
 	</div>
 </Section>

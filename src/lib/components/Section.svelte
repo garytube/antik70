@@ -4,7 +4,7 @@
 	export let circle = false;
 </script>
 
-<section {id} class="relative py-16 xl:py-24 mb-32 bg-beige bg-gradient-to-b from-[#733d2422] to-20% to-transparent">
+<section {id} class="relative py-16 xl:py-24 bg-beige bg-gradient-to-b from-[#733d2422] to-20% to-transparent">
 	<div class="z-10 relative" class:container class:mx-auto={container}>
 		<slot>CONTENT</slot>
 	</div>
