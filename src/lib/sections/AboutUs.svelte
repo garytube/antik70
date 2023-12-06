@@ -6,6 +6,7 @@
 	import FeatureBox from '$lib/components/FeatureBox.svelte';
 	import Feature from '$lib/components/Feature.svelte';
 	export let id = '';
+	import map from '$assets/map.svg';
 </script>
 
 <Section container {id} circle>
@@ -16,9 +17,16 @@
 				Antik70 ist ein kleines Team mit vielen individuellen Stärken, die wir seit mehr als 30 Jahren bündeln. Seit 1991 sind wir in gleicher Besetzung im Antik und
 				Beleuchtungsbereich tätig und immer in Berlin-Kreuzberg.
 			</P>
-			<div class="my-12">karte</div>
-			<P class="mb-20 leading-relaxed"
-				>Neben einer qualifizierten und ausführlichen Beratung in unseren Geschäftsräumen mir mehr als 150 qm Ausstellungsfläche bieten wir „Probewohnen“ Lieferung und Aufbau in
+			<div class="my-4">
+				<iframe
+					class="w-full rounded-md drop-shadow-md h-80"
+					title="Antik70"
+					src="https://www.openstreetmap.org/export/embed.html?bbox=13.400115072727205%2C52.489708834295506%2C13.4024915099144%2C52.49123259056697&amp;layer=mapnik&amp;marker=52.490470719030405%2C13.4013032913208"
+				></iframe>
+			</div>
+
+			<P class="mb-12">
+				Neben einer qualifizierten und ausführlichen Beratung in unseren Geschäftsräumen mir mehr als 150 qm Ausstellungsfläche bieten wir „Probewohnen“ Lieferung und Aufbau in
 				Berlin und nahem Umland, Ankauf, Abholungen, Anfertigungen und Montagen von Lampen sowie viele weitere Leistungen an. Reden Sie mit uns.
 			</P>
 			<Feature title="Unsere Nachhaltigkeit">
@@ -37,8 +45,9 @@
 				</P>
 			</Feature>
 		</div>
-		<div class="col-2">
-			<img src={Store} alt="Gneisenaustraße 70 - 10961 Berlin Kreuzberg" class="rounded-[49px] border-[3px] border-primary-DARK mb-8" />
+
+		<div class="col-2 grid columns-1 items-start gap-y-6 h-min">
+			<img src={Store} alt="Gneisenaustraße 70 - 10961 Berlin Kreuzberg" class="rounded-xl border-[3px] border-primary-DARK" />
 			<FeatureBox title="Porzellan" description="Diverse Einzelteile und komplette Service von Hutschenreuther und Rosenthal." cta="Tisch und Wohndekoration" href="/" />
 			<FeatureBox
 				title="Raritäten "
