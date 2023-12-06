@@ -1,8 +1,10 @@
 <script>
+	import { SITE } from '$const';
 	export let solid = false;
 </script>
 
-<button
+<a
+	href={SITE.SHOP_LINK}
 	type="button"
 	class:bg-primary={solid}
 	class:bg-transparent={!solid}
@@ -18,4 +20,4 @@
 			clip-rule="evenodd"
 		/>
 	</svg>
-</button>
+</a>

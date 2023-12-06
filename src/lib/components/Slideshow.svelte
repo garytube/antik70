@@ -29,12 +29,9 @@
 
 	<!-- svelte-ignore a11y-no-static-element-interactions -->
 	<div on:focus={() => (paused = true)} on:mouseover={() => (paused = true)} on:mouseleave={() => (paused = false)}>
-		<div
-			class="block lg:ml-auto slideshow w-full h-[300px] md:h-[450px] lg:h-[550px] xl:max-w-[480px] border-[6px] md:rounded-lg border-primary-DARK relative overflow-hidden"
-			class:paused
-		>
+		<div class="block lg:ml-auto slideshow w-full h-[300px] md:h-[450px] lg:h-[550px] xl:max-w-[480px] relative overflow-hidden" class:paused>
 			{#key slide}
-				<img transition:fade class="h-full w-full object-cover absolute inset-0 z-50" src={slide} alt={index.toString()} />
+				<img transition:fade class="h-full border-[6px] object-contain absolute inset-0 z-50 md:rounded-lg border-primary-DARK" src={slide} alt={index.toString()} />
 			{/key}
 		</div>
 		<div class="flex flex-row space-x-2 mt-4 mx-auto w-max duration-200"></div>

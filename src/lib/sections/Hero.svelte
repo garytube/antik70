@@ -6,7 +6,7 @@
 	import Slideshow from '$lib/components/Slideshow.svelte';
 	export let id: string;
 
-	const pictures = import.meta.glob('/src/assets/lamps/*.{avif,gif,heif,jpeg,jpg,png,tiff,webp}', {
+	const pictures = import.meta.glob('/src/assets/**/*.{avif,gif,heif,jpeg,jpg,png,tiff,webp}', {
 		eager: true,
 		as: 'url'
 	});
@@ -25,7 +25,7 @@
 
 		<!-- hero image -->
 		<div class=" order-1 md:order-1">
-			<Slideshow {pictures} />
+			<Slideshow speed={8000} {pictures} />
 		</div>
 	</div>
 </section>

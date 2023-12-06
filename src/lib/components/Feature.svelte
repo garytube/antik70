@@ -1,7 +1,4 @@
 <script lang="ts">
-	import H2 from './H2.svelte';
-	import H3 from './H3.svelte';
-
 	export let title: string;
 	export let alternate: boolean = false;
 </script>

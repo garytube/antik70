@@ -2,17 +2,8 @@
 	export let mobileNavVisable = false;
 </script>
 
-<div
-	id="mobileMenu"
-	class="flex flex-col justify-start fixed w-screen lg:hidden h-screen z-20 items-center px-4 top-32 bg-beige bg-opacity-50 backdrop-blur-sm left-0"
-	class:hidden={!mobileNavVisable}
->
-	<div
-		class="block w-full border-t-2 pt-8"
-		aria-orientation="vertical"
-		aria-labelledby="user-menu-button"
-		tabindex="-1"
-	>
+<div id="mobileMenu" class="flex flex-col justify-start fixed w-screen lg:hidden h-screen items-center px-4 top-32 bg-white left-0 z-[1000]" class:hidden={!mobileNavVisable}>
+	<div class="block w-full border-t-2 pt-8" aria-orientation="vertical" aria-labelledby="user-menu-button" tabindex="-1">
 		<slot>404- No Entries</slot>
 		<slot name="info">
 			<div class=" text-sm mt-4 grid gap-x-8 grid-cols-2">
