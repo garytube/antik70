@@ -1,5 +1,5 @@
 <script>
-	import { onMount, tick } from 'svelte';
+	import { onMount } from 'svelte';
 	import { fade } from 'svelte/transition';
 	export let pictures;
 	export let speed = 3000;
@@ -30,7 +30,7 @@
 	<!-- svelte-ignore a11y-no-static-element-interactions -->
 	<div on:focus={() => (paused = true)} on:mouseover={() => (paused = true)} on:mouseleave={() => (paused = false)}>
 		<div
-			class="block lg:ml-auto slideshow w-full h-[300px] md:h-[450px] lg:h-[550px] xl:max-w-[533px] xl:h-[750px] border-[6px] md:rounded-lg border-primary-DARK relative overflow-hidden"
+			class="block lg:ml-auto slideshow w-full h-[300px] md:h-[450px] lg:h-[550px] xl:max-w-[480px] border-[6px] md:rounded-lg border-primary-DARK relative overflow-hidden"
 			class:paused
 		>
 			{#key slide}

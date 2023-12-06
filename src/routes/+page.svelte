@@ -1,6 +1,5 @@
 <script>
-	import Beleuchtung from '$section/Block.svelte';
-	import LampenFeatures from '$section/FeatureBlock.svelte';
+	import LampenFeatures from '$section/Lamps.svelte';
 	import Hero from '$section/Hero.svelte';
 	import Mega from '$section/MegaBlock.svelte';
 	import AboutUs from '$section/AboutUs.svelte';
@@ -16,6 +15,5 @@
 
 <Hero id="home" />
 <LampenFeatures id="lampen" />
-<!-- <Beleuchtung id="beleuchtung" /> -->
 <Mega id="restaurationen" />
 <AboutUs id="antik70" />
