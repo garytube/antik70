@@ -6,7 +6,6 @@
 	import FeatureBox from '$lib/components/FeatureBox.svelte';
 	import Feature from '$lib/components/Feature.svelte';
 	export let id = '';
-	import map from '$assets/map.svg';
 </script>
 
 <Section container {id} circle>
