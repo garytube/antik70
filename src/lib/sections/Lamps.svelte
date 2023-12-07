@@ -3,10 +3,12 @@
 	import P from '$lib/components/P.svelte';
 	import Section from '$lib/components/Section.svelte';
 	import Feature from '$lib/components/Feature.svelte';
-	import Lamp from '$assets/lamp.jpg';
+	import pic1 from '$assets/lamps/1.jpg';
+	import pic3 from '$assets/lamps/3.jpg';
+	import pic4 from '$assets/lamps/4.jpg';
+	import pic5 from '$assets/lamps/5.jpg';
 	import LinkButton from '$lib/components/LinkButton.svelte';
-	import { SITE } from '$const';
-	import ShopButton from '$lib/components/ShopButton.svelte';
+
 	export let id = '';
 </script>
 
@@ -34,10 +36,10 @@
 			</Feature>
 		</div>
 		<div id="keyfacts_pictures" class=" hidden lg:grid picture_grid gap-8 md:ml-28">
-			<img src={Lamp} alt="antik70.de" class="pic1 rounded-[8px] border-[3px] border-primary-DARK" />
-			<img src={Lamp} alt="antik70.de" class="pic2 rounded-[8px] border-[3px] border-primary-DARK" />
-			<img src={Lamp} alt="antik70.de" class="pic3 rounded-[8px] border-[3px] border-primary-DARK" />
-			<img src={Lamp} alt="antik70.de" class="pic4 rounded-[8px] border-[3px] border-primary-DARK" />
+			<img src={pic1} alt="antik70.de" class="pic1 rounded-[8px] border-[3px] border-primary-DARK" />
+			<img src={pic5} alt="antik70.de" class="pic3 rounded-[8px] border-[3px] border-primary-DARK" />
+			<img src={pic3} alt="antik70.de" class="pic4 rounded-[8px] border-[3px] border-primary-DARK" />
+			<img src={pic4} alt="antik70.de" class="pic2 rounded-[8px] border-[3px] border-primary-DARK" />
 			<div class="shop_btn">
 				<LinkButton shop_icon href="https://antik70.de/shop/de/lampenglaeser">Unsere Lampen im Shop</LinkButton>
 			</div>

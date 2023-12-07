@@ -25,8 +25,10 @@ const config = {
 			black: '#000',
 			primary: {
 				DEFAULT: '#372922',
-				DARK: '#21130C'
+				DARK: '#21130C',
+				VERYDARK: 'rgb(21 16 13)'
 			},
+			redish: '#5f1616',
 			beige: '#F7ECE4',
 			white: '#fff',
 			highlight: '#DEAA82'

@@ -4,12 +4,12 @@
 	import H3 from '$lib/components/H3.svelte';
 	import LinkButton from '$lib/components/LinkButton.svelte';
 	import Slideshow from '$lib/components/Slideshow.svelte';
+	import pic4 from '$assets/lamps/4.jpg';
+	import pic5 from '$assets/store.png';
+	import pic6 from '$assets/lamps/5.jpg';
 	export let id: string;
 
-	const pictures = import.meta.glob('/src/assets/**/*.{avif,gif,heif,jpeg,jpg,png,tiff,webp}', {
-		eager: true,
-		as: 'url'
-	});
+	const pictures = [pic4, pic5, pic6];
 </script>
 
 <section {id} class=" lg:container lg:mx-auto xl:pt-12 mb-8 md:mb-20 lg:mb-32">
@@ -25,7 +25,7 @@
 
 		<!-- hero image -->
 		<div class=" order-1 md:order-1">
-			<Slideshow speed={8000} {pictures} />
+			<Slideshow speed={12000} {pictures} />
 		</div>
 	</div>
 </section>

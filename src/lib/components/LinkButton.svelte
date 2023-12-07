@@ -10,11 +10,9 @@
 <a
 	{href}
 	title={$$props.slot}
-	class="text-xl mt-8 shadow-lg px-3 py-2 flex flex-row items-center max-w-max btn rounded-xl hover:opacity-80"
-	class:bg-highlight={alternate}
-	class:text-primary={alternate}
+	class="text-xl mt-8 shadow-lg text-white px-4 py-2 flex flex-row items-center max-w-max btn rounded-xl hover:opacity-80"
+	class:bg-redish={alternate}
 	class:bg-primary={!alternate}
-	class:text-white={!alternate}
 >
 	{#if shop_icon}
 		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="fill-current mr-2 h-6">

@@ -1,7 +1,7 @@
 <script>
 	import { onMount } from 'svelte';
 	import { fade } from 'svelte/transition';
-	export let pictures;
+	export let pictures = [];
 	export let speed = 3000;
 
 	let index = 0;
@@ -10,6 +10,11 @@
 	let slides = Object.values(pictures);
 
 	$: slide = slides[index];
+
+	function setSlide(i) {
+		if (i == index) return;
+		index = i;
+	}
 
 	onMount(() => {
 		const counter = setInterval(() => {
@@ -28,18 +33,24 @@
 	<!-- content here -->
 
 	<!-- svelte-ignore a11y-no-static-element-interactions -->
-	<div on:focus={() => (paused = true)} on:mouseover={() => (paused = true)} on:mouseleave={() => (paused = false)}>
-		<div class="block lg:ml-auto slideshow w-full h-[300px] md:h-[450px] lg:h-[550px] xl:max-w-[480px] relative overflow-hidden" class:paused>
-			{#key slide}
-				<img transition:fade class="h-full border-[6px] object-contain absolute inset-0 z-50 md:rounded-lg border-primary-DARK" src={slide} alt={index.toString()} />
-			{/key}
+	<div
+		on:focus={() => (paused = true)}
+		on:mouseover={() => (paused = true)}
+		on:mouseleave={() => (paused = false)}
+		class="flex flex-col lg:ml-auto slideshow w-full xl:max-w-[480px]"
+		class:paused
+	>
+		{#key slide}
+			<img class="max-h-[470px] border-[6px] object-cover md:rounded-lg border-primary-DARK" src={slide} alt={index.toString()} />
+		{/key}
+		<div class="flex flex-row space-x-2 mt-4 mx-auto duration-200 xl:max-w-[480px]">
+			{#each slides as item, i (item)}
+				<button on:click={() => setSlide(i)} class="flex buttlet w-4 h-4 bg-primary rounded-full">
+					{#if i === index}
+						<div transition:fade class="w-3 h-3 border-2 border-[#DEAA82] rounded-full mx-auto my-auto"></div>
+					{/if}
+				</button>
+			{/each}
 		</div>
-		<div class="flex flex-row space-x-2 mt-4 mx-auto w-max duration-200"></div>
 	</div>
 {/if}
-
-<style lang="postcss">
-	.active {
-		background-color: rgba(144, 158, 179, 0.473) !important;
-	}
-</style>
