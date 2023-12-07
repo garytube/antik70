@@ -16,7 +16,7 @@ export const SITE = {
 		MEGA_SUBLINE:
 			'	Wir sind Experten für Reparaturen und Restaurationen. Sie können sich darauf verlassen, dass wir Ihre Möbel in ihren ursprünglichen Glanz versetzen oder sie in etwas Neues und \nAufregendes verwandeln können.',
 		MEGA_CONTACT: 'Zögern Sie nicht, uns zu kontaktieren!',
-		MEGA_CTA: 'Unser Reperatur Service',
+		MEGA_CTA: 'Unser Reparatur Service',
 		NAVI_LINKS: [
 			{
 				label: 'Lampen',
