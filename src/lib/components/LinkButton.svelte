@@ -10,6 +10,8 @@
 <a
 	{href}
 	title={$$props.slot}
+	target="_blank"
+	rel="noopener noreferrer"
 	class="text-xl mt-8 shadow-lg text-white px-4 py-2 flex flex-row items-center max-w-max btn rounded-xl hover:opacity-80"
 	class:bg-redish={alternate}
 	class:bg-primary={!alternate}
