@@ -22,17 +22,20 @@
 	<div class="xl:grid xl:grid-cols-2">
 		<div id="keyFacts">
 			<Feature title="Alte Lampen & Lampengestelle">
-				Hier finden Sie einige ausgewählte alte Lampen und Lampengestelle; neu elektrifiziert, repariert und gereinigt sowie teilweise mit Ergänzungsgläsern versehen. Verwenden wir
-				neue Glasschirme wird diese Tatsache ausdrücklich erwähnt. Weitere Einzelstücke können Sie in unseren Ausstellungsräumen betrachten
+				Wir führen ausgewählte alte Lampengläser, die teilweise mehr als 100 Jahre alt sind. Die Schirme sind gebraucht aber nicht defekt. Minimale Abplatzer am Glashalter sind
+				nach jahrelangen Gebrauch als normal anzusehen. Weitere Einzelstücke können Sie in unseren Ausstellungsräumen betrachten
+				<LinkButton shop_icon href="https://antik70.de/shop/de/lampenglaeser/antike-lampenschirme">Antike Lampenschirme</LinkButton>
 			</Feature>
 
-			<Feature alternate title="Reparaturen nach VDE Vorschriften">
-				Jede alte Lampe durchläuft eine Aufarbeitung, wird neu elektrifiziert und erfüllt höchste Sicherheitsstandards.
+			<Feature alternate title="Glasschirm Ersatzglas Lampenglas">
+				Klassische Formen, diverse Farben, spezielle Oberflächen und verschiedene Größen der einzelnen Modelle ergeben eine ungeahnte Vielfalt zur Bestückung Ihrer Lampengestelle.
+				<LinkButton shop_icon href="https://antik70.de/shop/lampenglaeser/glasschirme-farbig-lampenglas">Farbig Lampengläser</LinkButton>
 			</Feature>
 
-			<Feature title="Glasschirm, Ersatzglas, Lampenglas">
-				Eines der bestimmenden Kriterien im Bereich Beleuchtung. Klassische Formen, diverse Farben, spezielle Oberflächen und verschiedene Größen der einzelnen Modelle ergeben eine
-				ungeahnte Vielfalt zur Bestückung Ihrer Lampengestelle.
+			<Feature title="Tiffany Lampen">
+				Für Viele die Königsdisziplin der Lichtkunst. Tiffanylampen für Tisch, Decke, Wand und Boden; jeweils in höchster Perfektion gearbeitete Schirme, die den originalen
+				Vorbildern zur Ehre gereichen. Wir bieten einige ausgewählte Lampen mit Tiffanyschirmen an
+				<LinkButton shop_icon href="https://antik70.de/shop/de/beleuchtung/tiffany-leuchten">Lampenmodelle in unserer Ausstellung</LinkButton>
 			</Feature>
 		</div>
 		<div id="keyfacts_pictures" class=" hidden lg:grid picture_grid gap-8 md:ml-28">

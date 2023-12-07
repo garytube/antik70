@@ -12,7 +12,7 @@ const config = {
 		alias: {
 			$const: 'src/_const.ts',
 			$section: 'src/lib/sections',
-			$assets: 'src/assets',
+			$assets: 'src/assets'
 		}
 	}
 };
