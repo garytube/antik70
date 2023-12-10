@@ -1,4 +1,6 @@
 <script lang="ts">
+	import P from './P.svelte';
+
 	export let title: string;
 	export let alternate: boolean = false;
 </script>
@@ -16,7 +18,7 @@
 			<!-- end bubble mobile -->
 			{title}
 		</h4>
-		<p class="text-lg lg:text-xl leading-relaxed"><slot /></p>
+		<P><slot /></P>
 	</div>
 </div>
 

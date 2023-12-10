@@ -1,6 +1,7 @@
 export const SITE = {
 	SHOP_NAME: 'Antik70',
 	SHOP_LINK: 'https://antik70.de/shop',
+	SHOP_TIFFANY: 'https://antik70.de/shop/de/beleuchtung/tiffany-leuchten',
 	DE: {
 		SHOP_TEXT_1: 'Unser Shop',
 		SHOP_TEXT_2: 'Entdecken Sie unsere Rarietäten',

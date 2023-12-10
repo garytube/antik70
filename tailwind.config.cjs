@@ -28,7 +28,10 @@ const config = {
 				DARK: '#21130C',
 				VERYDARK: 'rgb(21 16 13)'
 			},
-			redish: '#5f1616',
+			redish: {
+				LIGHT: "#ab2d36",
+				DEFAULT: '#571616',
+			},
 			beige: '#F7ECE4',
 			white: '#fff',
 			highlight: '#DEAA82'

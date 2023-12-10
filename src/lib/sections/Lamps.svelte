@@ -1,6 +1,6 @@
 <script lang="ts">
+	import { SITE } from '$const';
 	import H2 from '$lib/components/H2.svelte';
-	import P from '$lib/components/P.svelte';
 	import Section from '$lib/components/Section.svelte';
 	import Feature from '$lib/components/Feature.svelte';
 	import pic1 from '$assets/lamps/1.jpg';
@@ -8,16 +8,20 @@
 	import pic4 from '$assets/lamps/4.jpg';
 	import pic5 from '$assets/lamps/5.jpg';
 	import LinkButton from '$lib/components/LinkButton.svelte';
+	import A from '$lib/components/A.svelte';
+	import H3 from '$lib/components/H3.svelte';
 
 	export let id = '';
 </script>
 
 <Section {id} circle>
 	<H2>Beleuchtung der besonderen Art Vielfalt und Einzigartigkeit unsere Lampenwelt</H2>
-	<P class="mb-12">
-		Antike Möbel aus den Epochen Biedermeier, Gründerzeit, Louis Philippe, Jugendstil und Art Deko, egal ob Schrank, Vertiko, Kommode, Küchenbuffet, Sekretär, ausgesuchte
-		Einzelstücke oder traumhaft schöne Raritäten, furniert oder aus Weichholz stehen zur Auswahl.
-	</P>
+	<H3 class="mb-12">
+		Entdecken Sie bei uns ein umfangreiches Sortiment an alten und neuen Lampen, das keine Wünsche offen lässt. Von der zeitlosen Eleganz unserer <A href={SITE.SHOP_TIFFANY}
+			>Tiffany-Lampen</A
+		> bis hin zu unseren höhenverstellbaren Zug- und Pendelleuchten, Plafonieren, Wandlampen und edlen Tisch- und Stehleuchten aus Messing. Jede unserer Lampen ist nicht nur eine reine
+		Leuchtquelle sondern ein hochwertiges und prägendes Einrichtungsstück.
+	</H3>
 
 	<div class="xl:grid xl:grid-cols-2">
 		<div id="keyFacts">
@@ -27,7 +31,7 @@
 				<LinkButton shop_icon href="https://antik70.de/shop/de/lampenglaeser/antike-lampenschirme">Antike Lampenschirme</LinkButton>
 			</Feature>
 
-			<Feature alternate title="Glasschirm Ersatzglas Lampenglas">
+			<Feature title="Glasschirm Ersatzglas Lampenglas">
 				Klassische Formen, diverse Farben, spezielle Oberflächen und verschiedene Größen der einzelnen Modelle ergeben eine ungeahnte Vielfalt zur Bestückung Ihrer Lampengestelle.
 				<LinkButton shop_icon href="https://antik70.de/shop/lampenglaeser/glasschirme-farbig-lampenglas">Farbig Lampengläser</LinkButton>
 			</Feature>
