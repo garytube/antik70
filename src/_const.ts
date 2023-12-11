@@ -23,7 +23,6 @@ export const SITE = {
 				label: 'Lampen',
 				href: '#lampen'
 			},
-
 			{
 				label: 'Restaurationen',
 				href: '#restaurationen'
@@ -35,14 +34,19 @@ export const SITE = {
 		],
 		FOOTER_LINKS: {
 			Antik70: [
-				{ name: 'Kontakt', href: '/' },
-				{ name: 'Über uns', href: '/' },
+				{ name: 'Kontakt', href: 'https://antik70.de/shop/de/kontakt' },
+				{ name: 'Über uns', href: '#antik70' },
 				{ name: 'Impressum', href: 'https://antik70.de/shop/de/Impressum' }
 			],
 			'Unser Shop': [
-				{ name: 'Öffnungszeiten', href: '/' },
-				{ name: 'Repeatur Service', href: '/' },
-				{ name: 'Probwohnen', href: '/' }
+				{ name: 'Antike Möbel', href: 'https://antik70.de/shop/de/antike-moebel' },
+				{ name: 'Lampengläser', href: 'https://antik70.de/shop/lampenglaeser' },
+				{ name: 'Sonderangebote', href: 'https://antik70.de/shop/raritaeten' }
+			],
+			'Beleuchtung': [
+				{ name: 'Glasschirme Opal', href: 'https://antik70.de/shop/lampenglaeser/glasschirme-opal' },
+				{ name: 'Antike Lampengläser', href: 'https://antik70.de/shop/de/lampenglaeser/antike-lampenschirme' },
+				{ name: 'Tiffany Leuchten', href: 'https://antik70.de/shop/de/beleuchtung/tiffany-leuchten' }
 			],
 			Informationen: [
 				{ name: 'Zahlarten & Versandskosten', href: 'https://antik70.de/shop/de/Liefer-und-Versandkosten' },

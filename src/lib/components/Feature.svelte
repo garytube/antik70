@@ -6,7 +6,7 @@
 </script>
 
 <div class="feature mb-6 lg:mb-10">
-	<div class=" buttlet hidden lg:flex w-4 h-4 lg:w-7 lg:h-7 bg-primary rounded-full mt-2" class:alternate>
+	<div class=" buttlet hidden lg:flex w-4 h-4 lg:w-6 lg:h-6 bg-primary rounded-full mt-2" class:alternate>
 		<div class="w-3 h-3 lg:w-4 lg:h-4 border-2 lg:border-[3px] border-[#DEAA82] rounded-full mx-auto my-auto"></div>
 	</div>
 	<div>

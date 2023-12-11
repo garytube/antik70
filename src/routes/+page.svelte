@@ -3,6 +3,8 @@
 	import Hero from '$section/Hero.svelte';
 	import Mega from '$section/MegaBlock.svelte';
 	import AboutUs from '$section/AboutUs.svelte';
+
+	import Repairs from '$section/Repairs.svelte';
 </script>
 
 <svelte:head>
@@ -15,5 +17,6 @@
 
 <Hero id="home" />
 <LampenFeatures id="lampen" />
-<Mega id="restaurationen" />
+<Mega />
+<Repairs id="restaurationen" />
 <AboutUs id="antik70" />

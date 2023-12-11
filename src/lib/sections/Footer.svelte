@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { SITE } from '$const';
+	import OpenHoures from '$lib/components/OpenHoures.svelte';
 </script>
 
 <footer class="py-14 bg-primary border-2 border-highlight text-white text-base">
@@ -15,15 +16,7 @@
 			</div>
 		{/each}
 		<div id="open" class="self-start justify-self-end text-right">
-			<h4 class="text-lg font-bold mb-4">{SITE.DE.OPEN_HOURS}</h4>
-			<p class="mb-2">
-				<span class="font-bold block">{SITE.DE.OPEN_HOURS_1}</span>
-				{SITE.DE.OPEN_HOURS_2}
-			</p>
-			<p>
-				<span class="font-bold block">{SITE.DE.OPEN_HOURS_3}</span>
-				{SITE.DE.OPEN_HOURS_4}
-			</p>
+			<OpenHoures />
 		</div>
 	</div>
 </footer>
