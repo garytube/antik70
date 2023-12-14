@@ -4,17 +4,10 @@ declare global {
 	namespace App {
 		// interface Error {}
 		interface Locals {
-			auth: import('lucia').AuthRequest;
-		}		// interface PageData {}
+			prisma: import('@prisma/client').PrismaClient;
+		} // interface PageData {}
 		// interface Platform {}
-	}
-	namespace Lucia {
-		type Auth = import("$lib/server/lucia").Auth;
-		type DatabaseUserAttributes = {
-			username: string;
-		};
-		type DatabaseSessionAttributes = {};
 	}
 }
 
-export { };
+export {};

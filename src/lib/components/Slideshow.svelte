@@ -1,16 +1,56 @@
 <script>
+	import { onMount } from 'svelte';
+	import { fade } from 'svelte/transition';
+	export let pictures = [];
+	export let speed = 3000;
+
+	let index = 0;
+	let paused = false;
+
+	let slides = Object.values(pictures);
+
+	$: slide = slides[index];
+
+	function setSlide(i) {
+		if (i == index) return;
+		index = i;
+	}
+
+	onMount(() => {
+		const counter = setInterval(() => {
+			if (paused) return;
+			if (index == slides.length - 1) {
+				index = 0;
+			} else {
+				++index;
+			}
+		}, speed);
+		return () => clearInterval(counter);
+	});
 </script>
 
-<div
-	class="block lg:ml-auto slideshow w-full h-[300px] md:h-[450px] lg:h-[550px] xl:max-w-[533px] xl:h-[750px] border-[6px] md:rounded-lg border-primary-DARK"
->
-	<div class="relative w-full h-full">
-		<div class="absolute top-0 left-0 w-full h-full">
-			<img
-				src="https://images.unsplash.com/photo-1630062823445-2deb4c35ec3b?auto=format&fit=crop&q=80&w=3450&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-				alt=""
-				class="w-full h-full object-cover"
-			/>
+{#if slides}
+	<!-- content here -->
+
+	<!-- svelte-ignore a11y-no-static-element-interactions -->
+	<div
+		on:focus={() => (paused = true)}
+		on:mouseover={() => (paused = true)}
+		on:mouseleave={() => (paused = false)}
+		class="flex flex-col lg:ml-auto slideshow w-full xl:max-w-[480px]"
+		class:paused
+	>
+		{#key slide}
+			<img class="max-h-[470px] border-[6px] object-cover md:rounded-lg border-primary-DARK" src={slide} alt={index.toString()} />
+		{/key}
+		<div class="flex flex-row space-x-2 mt-4 mx-auto duration-200 xl:max-w-[480px]">
+			{#each slides as item, i (item)}
+				<button on:click={() => setSlide(i)} class="flex buttlet w-4 h-4 bg-primary rounded-full">
+					{#if i === index}
+						<div transition:fade class="w-3 h-3 border-2 border-[#DEAA82] rounded-full mx-auto my-auto"></div>
+					{/if}
+				</button>
+			{/each}
 		</div>
 	</div>
-</div>
+{/if}

@@ -1,6 +1,10 @@
 <script>
-	import Lamps from '$lib/sections/Lamps.svelte';
-	import Hero from './../lib/sections/Hero.svelte';
+	import LampenFeatures from '$section/Lamps.svelte';
+	import Hero from '$section/Hero.svelte';
+	import Mega from '$section/MegaBlock.svelte';
+	import AboutUs from '$section/AboutUs.svelte';
+
+	import Repairs from '$section/Repairs.svelte';
 </script>
 
 <svelte:head>
@@ -11,5 +15,8 @@
 	/>
 </svelte:head>
 
-<Hero />
-<Lamps />
+<Hero id="home" />
+<LampenFeatures id="lampen" />
+<Mega />
+<Repairs id="restaurationen" />
+<AboutUs id="antik70" />

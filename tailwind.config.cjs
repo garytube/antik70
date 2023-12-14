@@ -5,10 +5,14 @@ const config = {
 	theme: {
 		extend: {
 			gridTemplateColumns: {
-				'hero': 'minmax(250px, 1fr) 1fr',
+				hero: 'minmax(250px, 1fr) 1fr',
+				footer: '230px 230px 230px 230px 1fr'
 			},
 			borderRadius: {
 				text: '1em'
+			},
+			fontSize: {
+				'6xl': ['58px', '72px']
 			},
 			screens: {
 				'2xl': '1536px'
@@ -21,7 +25,12 @@ const config = {
 			black: '#000',
 			primary: {
 				DEFAULT: '#372922',
-				DARK: '#21130C'
+				DARK: '#21130C',
+				VERYDARK: 'rgb(21 16 13)'
+			},
+			redish: {
+				LIGHT: "#ab2d36",
+				DEFAULT: '#571616',
 			},
 			beige: '#F7ECE4',
 			white: '#fff',
@@ -40,7 +49,7 @@ const config = {
 		}
 	},
 
-	plugins: []
+	plugins: [require('@tailwindcss/typography')]
 };
 
 module.exports = config;

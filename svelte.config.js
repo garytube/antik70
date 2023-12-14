@@ -1,4 +1,4 @@
-import adapter from '@sveltejs/adapter-cloudflare';
+import adapter from '@sveltejs/adapter-vercel';
 import { vitePreprocess } from '@sveltejs/kit/vite';
 
 /** @type {import('@sveltejs/kit').Config} */
@@ -9,7 +9,11 @@ const config = {
 
 	kit: {
 		adapter: adapter(),
-
+		alias: {
+			$const: 'src/_const.ts',
+			$section: 'src/lib/sections',
+			$assets: 'src/assets'
+		}
 	}
 };
 

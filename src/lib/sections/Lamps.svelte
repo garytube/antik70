@@ -1,43 +1,83 @@
-<script>
+<script lang="ts">
+	import { SITE } from '$const';
 	import H2 from '$lib/components/H2.svelte';
-	import P from '$lib/components/P.svelte';
+	import Section from '$lib/components/Section.svelte';
+	import Feature from '$lib/components/Feature.svelte';
+	import pic1 from '$assets/lamps/1.jpg';
+	import pic3 from '$assets/lamps/3.jpg';
+	import pic4 from '$assets/lamps/4.jpg';
+	import pic5 from '$assets/lamps/5.jpg';
 	import LinkButton from '$lib/components/LinkButton.svelte';
+	import A from '$lib/components/A.svelte';
+	import H3 from '$lib/components/H3.svelte';
+
+	export let id = '';
 </script>
 
-<section id="home" class="xl:pt-12 mb-32 bg-beige bg-gradient-to-b from-[#733d2422] to-20% to-transparent">
-	<div class="container mx-auto py-8 md:py-16">
-		<H2 class="sm:text-center">Vielfalt, Eleganz und Einzigartigkeit:<br />Unsere Lampenwelt</H2>
-		<P class="sm:text-center leading-relaxed  lg:max-w-5xl mx-auto">
-			Entdecken Sie bei uns ein umfangreiches Sortiment an Lampen, das keine Wünsche offen lässt. Von der zeitlosen Eleganz unserer
-			Tiffany-Lampen bis hin zu unseren höhenverstellbaren Zug- und Pendelleuchten, Plafonieren, Wandlampen und edlen Tisch- und
-			Stehleuchten aus Messing. Jede Lampe durchläuft eine Aufarbeitung, wird neu elektrifiziert und erfüllt höchste<br /><span
-				>Sicherheitsstandards</span
-			>.
-		</P>
-		<LinkButton href="#">
-			Unsere Lampen
-			<svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 ml-1" viewBox="0 0 16.692 22.499">
-				<path
-					id="Path_11"
-					data-name="Path 11"
-					d="M12,18V12.75m0,0a6.01,6.01,0,0,0,1.5-.189M12,12.75a6.01,6.01,0,0,1-1.5-.189m3.75,7.478a12.06,12.06,0,0,1-4.5,0m3.75,2.383a14.406,14.406,0,0,1-3,0M14.25,18v-.192a2.782,2.782,0,0,1,1.508-2.316,7.5,7.5,0,1,0-7.517,0A2.783,2.783,0,0,1,9.75,17.808V18"
-					transform="translate(-3.653 -0.752)"
-					fill="none"
-					stroke="currentColor"
-					stroke-linecap="round"
-					stroke-linejoin="round"
-					stroke-width="1.5"
-				/>
-			</svg>
-		</LinkButton>
+<Section {id} circle>
+	<H2>Beleuchtung der besonderen Art Vielfalt und Einzigartigkeit unsere Lampenwelt</H2>
+	<H3 class="mb-12">
+		Entdecken Sie bei uns ein umfangreiches Sortiment an alten und neuen Lampen, das keine Wünsche offen lässt. Von der zeitlosen Eleganz unserer <A href={SITE.SHOP_TIFFANY}
+			>Tiffany-Lampen</A
+		> bis hin zu unseren höhenverstellbaren Zug- und Pendelleuchten, Plafonieren, Wandlampen und edlen Tisch- und Stehleuchten aus Messing. Jede unserer Lampen ist nicht nur eine reine
+		Leuchtquelle sondern ein hochwertiges und prägendes Einrichtungsstück.
+	</H3>
 
-		<!-- lampen grid -->
-		<div class="grid mt-16 md:grid-cols-2 lg:grid-cols-3 gap-8">
-			{#each ['https://images.unsplash.com/photo-1544691560-fc2053d97726?auto=format&fit=crop&q=80&w=3870&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', 'https://images.unsplash.com/photo-1600620195943-eb20d00a556f?auto=format&fit=crop&q=80&w=3024&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', 'https://images.unsplash.com/photo-1577176434922-803273eba97a?auto=format&fit=crop&q=80&w=3870&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'] as image}
-				<div class="w-full h-[336px] border-4 border-primary-DARK rounded-xl overflow-hidden">
-					<img class="w-full h-full object-cover" src={image} alt="DEMO" />
-				</div>
-			{/each}
+	<div class="xl:grid xl:grid-cols-2">
+		<div id="keyFacts">
+			<Feature title="Alte Lampen & Lampengestelle">
+				Wir führen ausgewählte alte Lampengläser, die teilweise mehr als 100 Jahre alt sind. Die Schirme sind gebraucht aber nicht defekt. Minimale Abplatzer am Glashalter sind
+				nach jahrelangen Gebrauch als normal anzusehen. Weitere Einzelstücke können Sie in unseren Ausstellungsräumen betrachten
+				<LinkButton shop_icon href="https://antik70.de/shop/de/lampenglaeser/antike-lampenschirme">Antike Lampenschirme</LinkButton>
+			</Feature>
+
+			<Feature title="Glasschirm Ersatzglas Lampenglas">
+				Klassische Formen in opal, diverse Farben, spezielle Oberflächen und verschiedene Größen der einzelnen Modelle ergeben eine ungeahnte Vielfalt zur Bestückung Ihrer
+				Lampengestelle.
+				<LinkButton shop_icon href="https://antik70.de/shop/lampenglaeser/glasschirme-farbig-lampenglas">Farbig Lampengläser</LinkButton>
+			</Feature>
+
+			<Feature title="Tiffany Lampen">
+				Für Viele die Königsdisziplin der Lichtkunst. Tiffanylampen für Tisch, Decke, Wand und Boden; jeweils in höchster Perfektion gearbeitete Schirme, die den originalen
+				Vorbildern zur Ehre gereichen. Wir bieten einige ausgewählte Lampen mit Tiffanyschirmen an
+				<LinkButton shop_icon href="https://antik70.de/shop/de/beleuchtung/tiffany-leuchten">Lampenmodelle in unserer Ausstellung</LinkButton>
+			</Feature>
+		</div>
+		<div id="keyfacts_pictures" class=" hidden lg:grid picture_grid gap-8 md:ml-28">
+			<img src={pic1} alt="antik70.de" class="pic1 rounded-[8px] border-[3px] border-primary-DARK" />
+			<img src={pic5} alt="antik70.de" class="pic3 rounded-[8px] border-[3px] border-primary-DARK" />
+			<img src={pic3} alt="antik70.de" class="pic4 rounded-[8px] border-[3px] border-primary-DARK" />
+			<img src={pic4} alt="antik70.de" class="pic2 rounded-[8px] border-[3px] border-primary-DARK" />
+			<div class="shop_btn">
+				<LinkButton shop_icon href="https://antik70.de/shop/de/lampenglaeser">Unsere Lampen im Shop</LinkButton>
+			</div>
 		</div>
 	</div>
-</section>
+</Section>
+
+<style>
+	.picture_grid {
+		grid-template-columns: minmax(160px, 230px) minmax(160px, 230px);
+		grid-template-areas:
+			'pic1 pic2'
+			'pic3 pic4'
+			'shop_btn shop_btn';
+	}
+	.pic1 {
+		grid-area: pic1;
+	}
+	.pic2 {
+		grid-area: pic2;
+	}
+	.pic3 {
+		grid-area: pic3;
+	}
+	.pic4 {
+		grid-area: pic4;
+	}
+	.shop_btn {
+		gap: 0;
+		margin: -32px auto 0 auto;
+		grid-area: shop_btn;
+	}
+</style>
