@@ -30,6 +30,7 @@
 				<div itemscope itemtype="http://schema.org/LocalBusiness" class="grid anfahrt-grid justify-around mx-auto p-4">
 					<address class="text-md not-italic" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
 						<h4 class="text-lg font-bold">Adresse</h4>
+						<p>Antik 70</p>
 						<p itemprop="streetAddress">Gneisenaustr. 70</p>
 						<p itemprop="postalCode">10961 <span itemprop="addressLocality">Berlin</span></p>
 					</address>
@@ -38,7 +39,7 @@
 						<ul class=" text-sm">
 							<li><strong>U-Bahn</strong> (U7) Südstern oder Gneisenaustr</li>
 							<li><strong>Bus</strong> (140) hält an Gneisenaustr./Baerwaldstr</li>
-							<li><strong>PKW</strong> die Gneisenaustr. Bestandteil der Parkzone 61 ist und parken daher kostenpflichtig.</li>
+							<li><strong>PKW</strong> Parkzone 61 (Kostenpflichtig)</li>
 						</ul>
 					</div>
 					<LinkButton href="https://www.google.com/maps?q=Gneisenaustr.+70,+10961+Berlin" target="_blank">Google Maps</LinkButton>

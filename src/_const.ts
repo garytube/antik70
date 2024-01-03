@@ -43,15 +43,15 @@ export const SITE = {
 				{ name: 'Lampengläser', href: 'https://antik70.de/shop/lampenglaeser' },
 				{ name: 'Sonderangebote', href: 'https://antik70.de/shop/raritaeten' }
 			],
-			'Beleuchtung': [
+			Beleuchtung: [
 				{ name: 'Glasschirme Opal', href: 'https://antik70.de/shop/lampenglaeser/glasschirme-opal' },
 				{ name: 'Antike Lampengläser', href: 'https://antik70.de/shop/de/lampenglaeser/antike-lampenschirme' },
 				{ name: 'Tiffany Leuchten', href: 'https://antik70.de/shop/de/beleuchtung/tiffany-leuchten' }
 			],
 			Informationen: [
-				{ name: 'Zahlarten & Versandskosten', href: 'https://antik70.de/shop/de/Liefer-und-Versandkosten' },
+				{ name: 'Zahlarten & Versandkosten', href: 'https://antik70.de/shop/de/Liefer-und-Versandkosten' },
 				{ name: 'Unsere AGBs', href: 'https://antik70.de/shop/de/Unsere-AGB' },
-				{ name: 'Wiederrufsrecht', href: 'https://antik70.de/shop/de/Widerrufsrecht' }
+				{ name: 'Wieerrufsrecht', href: 'https://antik70.de/shop/de/Widerrufsrecht' }
 			]
 		},
 		OPEN_HOURS: 'Öffnungszeiten',
