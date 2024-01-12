@@ -1,0 +1,224 @@
+{
+  ".svelte-kit/generated/server/internal.js": {
+    "file": "internal.js",
+    "imports": [
+      "_internal.js"
+    ],
+    "isEntry": true,
+    "src": ".svelte-kit/generated/server/internal.js"
+  },
+  "_OpenHoures.js": {
+    "file": "chunks/OpenHoures.js",
+    "imports": [
+      "_ssr.js"
+    ]
+  },
+  "_exports.js": {
+    "file": "chunks/exports.js"
+  },
+  "_internal.js": {
+    "file": "chunks/internal.js",
+    "imports": [
+      "_ssr.js"
+    ]
+  },
+  "_ssr.js": {
+    "file": "chunks/ssr.js"
+  },
+  "node_modules/.pnpm/@fontsource+playfair-display@5.0.18/node_modules/@fontsource/playfair-display/files/playfair-display-cyrillic-400-normal.woff": {
+    "file": "_app/immutable/assets/playfair-display-cyrillic-400-normal.8vkGrJVy.woff",
+    "src": "node_modules/.pnpm/@fontsource+playfair-display@5.0.18/node_modules/@fontsource/playfair-display/files/playfair-display-cyrillic-400-normal.woff"
+  },
+  "node_modules/.pnpm/@fontsource+playfair-display@5.0.18/node_modules/@fontsource/playfair-display/files/playfair-display-cyrillic-400-normal.woff2": {
+    "file": "_app/immutable/assets/playfair-display-cyrillic-400-normal.6lm3yzuX.woff2",
+    "src": "node_modules/.pnpm/@fontsource+playfair-display@5.0.18/node_modules/@fontsource/playfair-display/files/playfair-display-cyrillic-400-normal.woff2"
+  },
+  "node_modules/.pnpm/@fontsource+playfair-display@5.0.18/node_modules/@fontsource/playfair-display/files/playfair-display-latin-400-normal.woff": {
+    "file": "_app/immutable/assets/playfair-display-latin-400-normal.gO-WZN8T.woff",
+    "src": "node_modules/.pnpm/@fontsource+playfair-display@5.0.18/node_modules/@fontsource/playfair-display/files/playfair-display-latin-400-normal.woff"
+  },
+  "node_modules/.pnpm/@fontsource+playfair-display@5.0.18/node_modules/@fontsource/playfair-display/files/playfair-display-latin-400-normal.woff2": {
+    "file": "_app/immutable/assets/playfair-display-latin-400-normal.1HL09Vkt.woff2",
+    "src": "node_modules/.pnpm/@fontsource+playfair-display@5.0.18/node_modules/@fontsource/playfair-display/files/playfair-display-latin-400-normal.woff2"
+  },
+  "node_modules/.pnpm/@fontsource+playfair-display@5.0.18/node_modules/@fontsource/playfair-display/files/playfair-display-latin-ext-400-normal.woff": {
+    "file": "_app/immutable/assets/playfair-display-latin-ext-400-normal.-IOl4XO3.woff",
+    "src": "node_modules/.pnpm/@fontsource+playfair-display@5.0.18/node_modules/@fontsource/playfair-display/files/playfair-display-latin-ext-400-normal.woff"
+  },
+  "node_modules/.pnpm/@fontsource+playfair-display@5.0.18/node_modules/@fontsource/playfair-display/files/playfair-display-latin-ext-400-normal.woff2": {
+    "file": "_app/immutable/assets/playfair-display-latin-ext-400-normal._4LMq_ae.woff2",
+    "src": "node_modules/.pnpm/@fontsource+playfair-display@5.0.18/node_modules/@fontsource/playfair-display/files/playfair-display-latin-ext-400-normal.woff2"
+  },
+  "node_modules/.pnpm/@fontsource+playfair-display@5.0.18/node_modules/@fontsource/playfair-display/files/playfair-display-vietnamese-400-normal.woff": {
+    "file": "_app/immutable/assets/playfair-display-vietnamese-400-normal.KcgduVA5.woff",
+    "src": "node_modules/.pnpm/@fontsource+playfair-display@5.0.18/node_modules/@fontsource/playfair-display/files/playfair-display-vietnamese-400-normal.woff"
+  },
+  "node_modules/.pnpm/@fontsource+playfair-display@5.0.18/node_modules/@fontsource/playfair-display/files/playfair-display-vietnamese-400-normal.woff2": {
+    "file": "_app/immutable/assets/playfair-display-vietnamese-400-normal.u_Vrd_Lk.woff2",
+    "src": "node_modules/.pnpm/@fontsource+playfair-display@5.0.18/node_modules/@fontsource/playfair-display/files/playfair-display-vietnamese-400-normal.woff2"
+  },
+  "node_modules/.pnpm/@fontsource+source-sans-pro@5.0.8/node_modules/@fontsource/source-sans-pro/files/source-sans-pro-cyrillic-400-normal.woff": {
+    "file": "_app/immutable/assets/source-sans-pro-cyrillic-400-normal.IeopwKy0.woff",
+    "src": "node_modules/.pnpm/@fontsource+source-sans-pro@5.0.8/node_modules/@fontsource/source-sans-pro/files/source-sans-pro-cyrillic-400-normal.woff"
+  },
+  "node_modules/.pnpm/@fontsource+source-sans-pro@5.0.8/node_modules/@fontsource/source-sans-pro/files/source-sans-pro-cyrillic-400-normal.woff2": {
+    "file": "_app/immutable/assets/source-sans-pro-cyrillic-400-normal.aOoJ1hLD.woff2",
+    "src": "node_modules/.pnpm/@fontsource+source-sans-pro@5.0.8/node_modules/@fontsource/source-sans-pro/files/source-sans-pro-cyrillic-400-normal.woff2"
+  },
+  "node_modules/.pnpm/@fontsource+source-sans-pro@5.0.8/node_modules/@fontsource/source-sans-pro/files/source-sans-pro-cyrillic-ext-400-normal.woff": {
+    "file": "_app/immutable/assets/source-sans-pro-cyrillic-ext-400-normal.7Q_4NH1v.woff",
+    "src": "node_modules/.pnpm/@fontsource+source-sans-pro@5.0.8/node_modules/@fontsource/source-sans-pro/files/source-sans-pro-cyrillic-ext-400-normal.woff"
+  },
+  "node_modules/.pnpm/@fontsource+source-sans-pro@5.0.8/node_modules/@fontsource/source-sans-pro/files/source-sans-pro-cyrillic-ext-400-normal.woff2": {
+    "file": "_app/immutable/assets/source-sans-pro-cyrillic-ext-400-normal.WSUZCeeR.woff2",
+    "src": "node_modules/.pnpm/@fontsource+source-sans-pro@5.0.8/node_modules/@fontsource/source-sans-pro/files/source-sans-pro-cyrillic-ext-400-normal.woff2"
+  },
+  "node_modules/.pnpm/@fontsource+source-sans-pro@5.0.8/node_modules/@fontsource/source-sans-pro/files/source-sans-pro-greek-400-normal.woff": {
+    "file": "_app/immutable/assets/source-sans-pro-greek-400-normal.vqgfQkwW.woff",
+    "src": "node_modules/.pnpm/@fontsource+source-sans-pro@5.0.8/node_modules/@fontsource/source-sans-pro/files/source-sans-pro-greek-400-normal.woff"
+  },
+  "node_modules/.pnpm/@fontsource+source-sans-pro@5.0.8/node_modules/@fontsource/source-sans-pro/files/source-sans-pro-greek-400-normal.woff2": {
+    "file": "_app/immutable/assets/source-sans-pro-greek-400-normal.mSZgj3WI.woff2",
+    "src": "node_modules/.pnpm/@fontsource+source-sans-pro@5.0.8/node_modules/@fontsource/source-sans-pro/files/source-sans-pro-greek-400-normal.woff2"
+  },
+  "node_modules/.pnpm/@fontsource+source-sans-pro@5.0.8/node_modules/@fontsource/source-sans-pro/files/source-sans-pro-greek-ext-400-normal.woff": {
+    "file": "_app/immutable/assets/source-sans-pro-greek-ext-400-normal.XyFi9adT.woff",
+    "src": "node_modules/.pnpm/@fontsource+source-sans-pro@5.0.8/node_modules/@fontsource/source-sans-pro/files/source-sans-pro-greek-ext-400-normal.woff"
+  },
+  "node_modules/.pnpm/@fontsource+source-sans-pro@5.0.8/node_modules/@fontsource/source-sans-pro/files/source-sans-pro-greek-ext-400-normal.woff2": {
+    "file": "_app/immutable/assets/source-sans-pro-greek-ext-400-normal.7q1fijPT.woff2",
+    "src": "node_modules/.pnpm/@fontsource+source-sans-pro@5.0.8/node_modules/@fontsource/source-sans-pro/files/source-sans-pro-greek-ext-400-normal.woff2"
+  },
+  "node_modules/.pnpm/@fontsource+source-sans-pro@5.0.8/node_modules/@fontsource/source-sans-pro/files/source-sans-pro-latin-400-normal.woff": {
+    "file": "_app/immutable/assets/source-sans-pro-latin-400-normal.Eew2UvZK.woff",
+    "src": "node_modules/.pnpm/@fontsource+source-sans-pro@5.0.8/node_modules/@fontsource/source-sans-pro/files/source-sans-pro-latin-400-normal.woff"
+  },
+  "node_modules/.pnpm/@fontsource+source-sans-pro@5.0.8/node_modules/@fontsource/source-sans-pro/files/source-sans-pro-latin-400-normal.woff2": {
+    "file": "_app/immutable/assets/source-sans-pro-latin-400-normal.LabC1wki.woff2",
+    "src": "node_modules/.pnpm/@fontsource+source-sans-pro@5.0.8/node_modules/@fontsource/source-sans-pro/files/source-sans-pro-latin-400-normal.woff2"
+  },
+  "node_modules/.pnpm/@fontsource+source-sans-pro@5.0.8/node_modules/@fontsource/source-sans-pro/files/source-sans-pro-latin-ext-400-normal.woff": {
+    "file": "_app/immutable/assets/source-sans-pro-latin-ext-400-normal.eMmr7uTj.woff",
+    "src": "node_modules/.pnpm/@fontsource+source-sans-pro@5.0.8/node_modules/@fontsource/source-sans-pro/files/source-sans-pro-latin-ext-400-normal.woff"
+  },
+  "node_modules/.pnpm/@fontsource+source-sans-pro@5.0.8/node_modules/@fontsource/source-sans-pro/files/source-sans-pro-latin-ext-400-normal.woff2": {
+    "file": "_app/immutable/assets/source-sans-pro-latin-ext-400-normal.G9Is0bPK.woff2",
+    "src": "node_modules/.pnpm/@fontsource+source-sans-pro@5.0.8/node_modules/@fontsource/source-sans-pro/files/source-sans-pro-latin-ext-400-normal.woff2"
+  },
+  "node_modules/.pnpm/@fontsource+source-sans-pro@5.0.8/node_modules/@fontsource/source-sans-pro/files/source-sans-pro-vietnamese-400-normal.woff": {
+    "file": "_app/immutable/assets/source-sans-pro-vietnamese-400-normal.v19ljxzR.woff",
+    "src": "node_modules/.pnpm/@fontsource+source-sans-pro@5.0.8/node_modules/@fontsource/source-sans-pro/files/source-sans-pro-vietnamese-400-normal.woff"
+  },
+  "node_modules/.pnpm/@fontsource+source-sans-pro@5.0.8/node_modules/@fontsource/source-sans-pro/files/source-sans-pro-vietnamese-400-normal.woff2": {
+    "file": "_app/immutable/assets/source-sans-pro-vietnamese-400-normal.5qW7Uq8a.woff2",
+    "src": "node_modules/.pnpm/@fontsource+source-sans-pro@5.0.8/node_modules/@fontsource/source-sans-pro/files/source-sans-pro-vietnamese-400-normal.woff2"
+  },
+  "node_modules/.pnpm/@sveltejs+kit@2.3.2_@sveltejs+vite-plugin-svelte@3.0.1_svelte@4.2.8_vite@5.0.11/node_modules/@sveltejs/kit/src/runtime/components/error.svelte": {
+    "file": "entries/fallbacks/error.svelte.js",
+    "imports": [
+      "_ssr.js",
+      "_exports.js"
+    ],
+    "isEntry": true,
+    "src": "node_modules/.pnpm/@sveltejs+kit@2.3.2_@sveltejs+vite-plugin-svelte@3.0.1_svelte@4.2.8_vite@5.0.11/node_modules/@sveltejs/kit/src/runtime/components/error.svelte"
+  },
+  "node_modules/.pnpm/@sveltejs+kit@2.3.2_@sveltejs+vite-plugin-svelte@3.0.1_svelte@4.2.8_vite@5.0.11/node_modules/@sveltejs/kit/src/runtime/server/index.js": {
+    "file": "index.js",
+    "imports": [
+      "_internal.js",
+      "_exports.js",
+      "_ssr.js"
+    ],
+    "isEntry": true,
+    "src": "node_modules/.pnpm/@sveltejs+kit@2.3.2_@sveltejs+vite-plugin-svelte@3.0.1_svelte@4.2.8_vite@5.0.11/node_modules/@sveltejs/kit/src/runtime/server/index.js"
+  },
+  "src/assets/lamp.jpg": {
+    "file": "_app/immutable/assets/5.JnZKdIYq.jpg",
+    "src": "src/assets/lamp.jpg"
+  },
+  "src/assets/lamps/1.jpg": {
+    "file": "_app/immutable/assets/1.sBSaK_CC.jpg",
+    "src": "src/assets/lamps/1.jpg"
+  },
+  "src/assets/lamps/2.jpg": {
+    "file": "_app/immutable/assets/2.MFZkzOl3.jpg",
+    "src": "src/assets/lamps/2.jpg"
+  },
+  "src/assets/lamps/3.jpg": {
+    "file": "_app/immutable/assets/3.OGxihsHr.jpg",
+    "src": "src/assets/lamps/3.jpg"
+  },
+  "src/assets/lamps/4.jpg": {
+    "file": "_app/immutable/assets/4.rizR10pu.jpg",
+    "src": "src/assets/lamps/4.jpg"
+  },
+  "src/assets/lamps/5.jpg": {
+    "file": "_app/immutable/assets/5.JnZKdIYq.jpg",
+    "src": "src/assets/lamp.jpg"
+  },
+  "src/assets/store.png": {
+    "file": "_app/immutable/assets/store.Y3Q-X8Cc.png",
+    "src": "src/assets/store.png"
+  },
+  "src/routes/+layout.js": {
+    "file": "entries/pages/_layout.js",
+    "isEntry": true,
+    "src": "src/routes/+layout.js"
+  },
+  "src/routes/+layout.svelte": {
+    "assets": [
+      "_app/immutable/assets/source-sans-pro-cyrillic-ext-400-normal.WSUZCeeR.woff2",
+      "_app/immutable/assets/source-sans-pro-cyrillic-ext-400-normal.7Q_4NH1v.woff",
+      "_app/immutable/assets/source-sans-pro-cyrillic-400-normal.aOoJ1hLD.woff2",
+      "_app/immutable/assets/source-sans-pro-cyrillic-400-normal.IeopwKy0.woff",
+      "_app/immutable/assets/source-sans-pro-greek-ext-400-normal.7q1fijPT.woff2",
+      "_app/immutable/assets/source-sans-pro-greek-ext-400-normal.XyFi9adT.woff",
+      "_app/immutable/assets/source-sans-pro-greek-400-normal.mSZgj3WI.woff2",
+      "_app/immutable/assets/source-sans-pro-greek-400-normal.vqgfQkwW.woff",
+      "_app/immutable/assets/source-sans-pro-vietnamese-400-normal.5qW7Uq8a.woff2",
+      "_app/immutable/assets/source-sans-pro-vietnamese-400-normal.v19ljxzR.woff",
+      "_app/immutable/assets/source-sans-pro-latin-ext-400-normal.G9Is0bPK.woff2",
+      "_app/immutable/assets/source-sans-pro-latin-ext-400-normal.eMmr7uTj.woff",
+      "_app/immutable/assets/source-sans-pro-latin-400-normal.LabC1wki.woff2",
+      "_app/immutable/assets/source-sans-pro-latin-400-normal.Eew2UvZK.woff",
+      "_app/immutable/assets/playfair-display-cyrillic-400-normal.6lm3yzuX.woff2",
+      "_app/immutable/assets/playfair-display-cyrillic-400-normal.8vkGrJVy.woff",
+      "_app/immutable/assets/playfair-display-vietnamese-400-normal.u_Vrd_Lk.woff2",
+      "_app/immutable/assets/playfair-display-vietnamese-400-normal.KcgduVA5.woff",
+      "_app/immutable/assets/playfair-display-latin-ext-400-normal._4LMq_ae.woff2",
+      "_app/immutable/assets/playfair-display-latin-ext-400-normal.-IOl4XO3.woff",
+      "_app/immutable/assets/playfair-display-latin-400-normal.1HL09Vkt.woff2",
+      "_app/immutable/assets/playfair-display-latin-400-normal.gO-WZN8T.woff"
+    ],
+    "css": [
+      "_app/immutable/assets/_layout.tubdhUcc.css"
+    ],
+    "file": "entries/pages/_layout.svelte.js",
+    "imports": [
+      "_ssr.js",
+      "_OpenHoures.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/+layout.svelte"
+  },
+  "src/routes/+page.svelte": {
+    "assets": [
+      "_app/immutable/assets/1.sBSaK_CC.jpg",
+      "_app/immutable/assets/3.OGxihsHr.jpg",
+      "_app/immutable/assets/4.rizR10pu.jpg",
+      "_app/immutable/assets/5.JnZKdIYq.jpg",
+      "_app/immutable/assets/store.Y3Q-X8Cc.png",
+      "_app/immutable/assets/2.MFZkzOl3.jpg"
+    ],
+    "css": [
+      "_app/immutable/assets/_page.Ph_99H91.css"
+    ],
+    "file": "entries/pages/_page.svelte.js",
+    "imports": [
+      "_ssr.js",
+      "_OpenHoures.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/+page.svelte"
+  }
+}
