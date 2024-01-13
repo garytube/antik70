@@ -5,10 +5,15 @@
 	import AboutUs from '$section/AboutUs.svelte';
 
 	import Repairs from '$section/Repairs.svelte';
+	import { dev } from '$app/environment';
 </script>
 
 <svelte:head>
-	<title>Antik70 - Zeitlose Eleganz</title>
+	{#if dev}
+		<title>Antik70 - DEVELOPMENT SERVER</title>
+	{:else}
+		<title>Antik70 - Zeitlose Eleganz</title>
+	{/if}
 	<meta
 		name="description"
 		content="Jedes Möbelstück erzählt eine Geschichte vergangener Epochen, mit Liebe restauriert und bereit, Ihr Zuhause mit zeitloser Eleganz zu schmücken. Tauchen Sie ein in unsere Welt, in der Geschichte und Stil sich vereinen. "
