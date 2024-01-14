@@ -28,7 +28,7 @@
 			<Feature title="Alte Lampen & Lampengestelle">
 				Wir führen ausgewählte alte Lampengläser, die teilweise mehr als 100 Jahre alt sind. Die Schirme sind gebraucht aber nicht defekt. Minimale Abplatzer am Glashalter sind
 				nach jahrelangen Gebrauch als normal anzusehen. Weitere Einzelstücke können Sie in unseren Ausstellungsräumen betrachten
-				<LinkButton shop_icon href="https://antik70.de/shop/de/lampenglaeser/antike-lampenschirme">Antike Lampenschirme</LinkButton>
+				<LinkButton shop_icon href="https://antik70.de/shop/de/lampenglaeser/antike-lampenschirme">Alte Lampenschirme</LinkButton>
 			</Feature>
 
 			<Feature title="Glasschirm Ersatzglas Lampenglas">
