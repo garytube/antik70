@@ -10,7 +10,9 @@
 				<h4 class="text-lg font-bold mb-4">{categorie}</h4>
 				<ul>
 					{#each links as link}
-						<li class="mb-2 last:mb-0 hover:text-highlight"><a href={link.href}>{link.name}</a></li>
+						<li class="mb-2 last:mb-0 hover:text-highlight">
+							<a target="_blank" href={link.href}>{link.name}</a>
+						</li>
 					{/each}
 				</ul>
 			</div>

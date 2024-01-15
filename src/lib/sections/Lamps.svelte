@@ -34,7 +34,7 @@
 			<Feature title="Glasschirm Ersatzglas Lampenglas">
 				Klassische Formen in opal, diverse Farben, spezielle Oberflächen und verschiedene Größen der einzelnen Modelle ergeben eine ungeahnte Vielfalt zur Bestückung Ihrer
 				Lampengestelle.
-				<LinkButton shop_icon href="https://antik70.de/shop/lampenglaeser/glasschirme-farbig-lampenglas">Farbig Lampengläser</LinkButton>
+				<LinkButton shop_icon href="https://antik70.de/shop/lampenglaeser">Lampengläser & Ersatzschirme</LinkButton>
 			</Feature>
 
 			<Feature title="Tiffany Lampen">

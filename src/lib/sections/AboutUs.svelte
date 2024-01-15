@@ -80,9 +80,9 @@
 				href="https://antik70.de/shop/raritaeten"
 			/>
 			<FeatureBox
-				title="Uhren "
+				title="Unsere Uhren"
 				description="Unsere kleine aber feine Auswahl an alten Wand - Tisch oder Standuhren."
-				cta="Ersatzgläser"
+				cta="Uhren"
 				href="https://antik70.de/shop/de/wohndekoration/uhren"
 			/>
 		</div>

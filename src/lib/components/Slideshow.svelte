@@ -1,7 +1,7 @@
-<script>
+<script lang="ts">
 	import { onMount } from 'svelte';
 	import { fade } from 'svelte/transition';
-	export let pictures = [];
+	export let pictures: Array<string> = [];
 	export let speed = 3000;
 
 	let index = 0;
@@ -11,7 +11,7 @@
 
 	$: slide = slides[index];
 
-	function setSlide(i) {
+	function setSlide(i: any) {
 		if (i == index) return;
 		index = i;
 	}

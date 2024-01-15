@@ -51,7 +51,7 @@ export const SITE = {
 			Informationen: [
 				{ name: 'Zahlarten & Versandkosten', href: 'https://antik70.de/shop/de/Liefer-und-Versandkosten' },
 				{ name: 'Unsere AGBs', href: 'https://antik70.de/shop/de/Unsere-AGB' },
-				{ name: 'Wieerrufsrecht', href: 'https://antik70.de/shop/de/Widerrufsrecht' }
+				{ name: 'Widerrufsrecht', href: 'https://antik70.de/shop/de/Widerrufsrecht' }
 			]
 		},
 		OPEN_HOURS: 'Öffnungszeiten',
