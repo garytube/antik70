@@ -62,7 +62,7 @@
 			</Feature>
 		</div>
 
-		<div class="col-2 grid columns-1 items-start gap-y-6 h-min">
+		<div class="hidden grid-cols-2 md:grid columns-1 items-start gap-y-6 h-min">
 			<img src={Store} alt="Gneisenaustraße 70 - 10961 Berlin Kreuzberg" class="rounded-xl border-[3px] border-primary-DARK" />
 			<div id="open" class="self-start justify-self-start text-left grid grid-cols-3 gap-3 justify-evenly">
 				<OpenHoures />

@@ -4,7 +4,7 @@
 </script>
 
 <footer class="py-14 bg-primary border-2 border-highlight text-white text-base">
-	<div class="container grid grid-cols-footer">
+	<div class="container grid md:grid-cols-footer">
 		{#each Object.entries(SITE.DE.FOOTER_LINKS) as [categorie, links]}
 			<div>
 				<h4 class="text-lg font-bold mb-4">{categorie}</h4>
