@@ -9,7 +9,7 @@
 </script>
 
 <TailwindDebug></TailwindDebug>
-<header class="px-6 lg:container relative flex mt-16 mb-8">
+<header class="px-6 lg:container relative flex my-8 lg:mt-16 lg:mb-8">
 	<Logo />
 	<Navigation />
 </header>

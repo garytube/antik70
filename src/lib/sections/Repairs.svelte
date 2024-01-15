@@ -9,20 +9,15 @@
 
 <Section {id} circle>
 	<H2>Restaurationen</H2>
-	<div class="grid cols2 gap-12 mb-12 items-center">
-		<div>
-			<H3>
-				Alle alten und antiken Lampen werden von uns aufgearbeitet und neu elektrifiziert, um sämtliche erforderlichen Sicherheitsstandards zu erfüllen. Bei stoffummantelten Kabeln
-				verwenden wir eine Spezialanfertigung mit einem verstärkten Innenleben, was die unbedenkliche Nutzung unserer Zugleuchten gewährleistet. Für die Elektrik werden
-				ausschließlich neue, VDE-geprüfte Teile verbaut oder ersetzt.
-			</H3>
-			<!-- <div class="mt-8">
-				<LinkButton shop_icon href="https://antik70.de/shop/de/lampenglaeser/antike-lampenschirme">Link irgendwo</LinkButton>
-			</div> -->
-		</div>
-		<img class="rounded-md h-[200px] ml-auto border-4" src="https://antik70.de/shop/media/images/org/antike_moebel.jpg" alt="Restaurationen" />
+	<div class="grid md:grid-cols-2 gap-12 mb-12 items-center">
+		<H3>
+			Alle alten und antiken Lampen werden von uns aufgearbeitet und neu elektrifiziert, um sämtliche erforderlichen Sicherheitsstandards zu erfüllen. Bei stoffummantelten Kabeln
+			verwenden wir eine Spezialanfertigung mit einem verstärkten Innenleben, was die unbedenkliche Nutzung unserer Zugleuchten gewährleistet. Für die Elektrik werden
+			ausschließlich neue, VDE-geprüfte Teile verbaut oder ersetzt.
+		</H3>
+		<img class="rounded-md md:object-contain md:h-[200px] ml-auto border-4" src="https://antik70.de/shop/media/images/org/antike_moebel.jpg" alt="Restaurationen" />
 	</div>
-	<div class="grid cols2 lg:gap-20">
+	<div class="grid md:grid-cols-2 lg:gap-20">
 		<Feature title="Bearbeitung unserer Weichholzmöbel">
 			Wir schleifen unsere Möbel innen und außen, grundieren dann mit Schellack und schleifen dann die Sichtflächen nochmals fein. Die Oberfläche wird abschließend gewachst. Als
 			Finish polieren wir die gewachsten Oberflächen, damit eine leicht samtig glänzende Oberfläche entsteht. Selbstverständlich wird vorhandener Holzwurm behandelt, Beschläge
@@ -36,11 +31,11 @@
 		</Feature>
 	</div>
 
-	<div class="flex flex-col justify-center items-center text-white py-12 px-4 bg-gradient-to-b from-primary to-primary-DARK">
+	<div class="text-center text-pretty flex flex-col justify-center items-center text-white py-12 px-4 bg-gradient-to-b from-primary to-primary-DARK">
 		<h2 class="text-3xl lg:leading-tight mb-4 font-serif">Fragen? Lassen Sie sich unverbindlich beraten</h2>
 		<p class="text-xl lg:leading-tight">Einfach dit Telefon zücken oder 'ne Mail abdrücken, wir stehen bereit für'n entspannten Schnack. Keen Hokuspokus, versprochen</p>
-		<div class="flex gap-8 mt-8">
-			<div class="text-xl mb-4 border-2 flex flex-row gap-4 items-center max-w-max py-0.5 px-2 rounded-md">
+		<div class="grid md:grid-cols-2r gap-4 mt-8">
+			<div class="text-xl border-2 flex flex-row gap-2 items-center max-w-max py-1 px-2 rounded-md">
 				<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-6">
 					<path
 						stroke-linecap="round"
@@ -50,7 +45,7 @@
 				</svg>
 				<a href="tel:+493081797945">030 / 81 79 79 45</a>
 			</div>
-			<div class="text-xl mb-4 border-2 flex flex-row gap-4 items-center max-w-max py-0.5 px-2 rounded-md">
+			<div class="text-xl border-2 flex flex-row gap-2 items-center max-w-max py-1 px-2 rounded-md">
 				<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
 					<path
 						stroke-linecap="round"
@@ -63,9 +58,3 @@
 		</div>
 	</div>
 </Section>
-
-<style>
-	.cols2 {
-		grid-template-columns: 1fr 1fr;
-	}
-</style>

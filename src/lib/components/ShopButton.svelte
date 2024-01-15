@@ -10,7 +10,7 @@
 	class:bg-transparent={!solid}
 	class:text-white={solid}
 	class:text-primary={!solid}
-	class="text-xs md:text-base inline-flex items-center gap-x-1 md:gap-x-2 rounded-text border-2 px-2 py-1 xl:px-3 xl:py-1 font-bold text-[16px] focus-visible:outline hover:bg-primary hover:text-white transition-colors hover:border-transparent duration-200 ease-in-out whitespace-nowrap"
+	class="text-sm md:text-base inline-flex items-center gap-x-1 md:gap-x-2 rounded-text border-2 px-2 py-1 xl:px-3 xl:py-1 font-bold text-[16px] focus-visible:outline hover:bg-primary hover:text-white transition-colors hover:border-transparent duration-200 ease-in-out whitespace-nowrap"
 >
 	<slot />
 	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">

@@ -41,7 +41,7 @@
 		class:paused
 	>
 		{#key slide}
-			<img class="max-h-[470px] border-[6px] object-cover md:rounded-lg border-primary-DARK" src={slide} alt={index.toString()} />
+			<img class="max-h-[340px] md:max-h-[470px] border-[6px] object-cover md:rounded-lg border-primary-DARK" src={slide} alt={index.toString()} />
 		{/key}
 		<div class="flex flex-row space-x-2 mt-4 mx-auto duration-200 xl:max-w-[480px]">
 			{#each slides as item, i (item)}
