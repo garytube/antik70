@@ -6,13 +6,12 @@
 	import FeatureBox from '$lib/components/FeatureBox.svelte';
 	import Feature from '$lib/components/Feature.svelte';
 	import OpenHoures from '$lib/components/OpenHoures.svelte';
-	import FeatureBlock from './FeatureBlock.svelte';
 	import LinkButton from '$lib/components/LinkButton.svelte';
 	export let id = '';
 </script>
 
 <Section container {id} circle>
-	<div class="grid about_grid max-w-[1660px] mx-auto">
+	<div class="grid lg:grid-cols-about max-w-[1660px] mx-auto">
 		<div class="col-1 pr-24">
 			<H2>Antik70 - Seit 1991 im Antik und Beleuchtungsbereich</H2>
 			<P>
@@ -62,29 +61,31 @@
 			</Feature>
 		</div>
 
-		<div class="hidden grid-cols-2 md:grid columns-1 items-start gap-y-6 h-min">
-			<img src={Store} alt="Gneisenaustraße 70 - 10961 Berlin Kreuzberg" class="rounded-xl border-[3px] border-primary-DARK" />
-			<div id="open" class="self-start justify-self-start text-left grid grid-cols-3 gap-3 justify-evenly">
+		<div class="grid items-start gap-y-6 h-min">
+			<img src={Store} alt="Gneisenaustraße 70 - 10961 Berlin Kreuzberg" class="hidden lg:block rounded-xl border-[3px] border-primary-DARK" />
+			<div id="open" class="hidden lg:block self-start justify-self-start text-left grid grid-cols-3 gap-3 justify-evenly">
 				<OpenHoures />
 			</div>
-			<FeatureBox
-				title="Porzellan"
-				description="Diverse Einzelteile und komplette Service von Hutschenreuther und Rosenthal."
-				cta="Tisch und Wohndekoration"
-				href="https://antik70.de/shop/de/wohndekoration/porzellan"
-			/>
-			<FeatureBox
-				title="Raritäten "
-				description="Sammlerstücke, die nicht jeder hat, außergewöhnliche Gegenstände zum Nutzen oder Dekorieren."
-				cta="Antike Möbel & Pflege"
-				href="https://antik70.de/shop/raritaeten"
-			/>
-			<FeatureBox
-				title="Unsere Uhren"
-				description="Unsere kleine aber feine Auswahl an alten Wand - Tisch oder Standuhren."
-				cta="Uhren"
-				href="https://antik70.de/shop/de/wohndekoration/uhren"
-			/>
+			<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-6 w-[300px] md:w-auto">
+				<FeatureBox
+					title="Porzellan"
+					description="Diverse Einzelteile und komplette Service von Hutschenreuther und Rosenthal."
+					cta="Tisch und Wohndekoration"
+					href="https://antik70.de/shop/de/wohndekoration/porzellan"
+				/>
+				<FeatureBox
+					title="Raritäten "
+					description="Sammlerstücke, die nicht jeder hat, außergewöhnliche Gegenstände zum Nutzen oder Dekorieren."
+					cta="Antike Möbel & Pflege"
+					href="https://antik70.de/shop/raritaeten"
+				/>
+				<FeatureBox
+					title="Unsere Uhren"
+					description="Unsere kleine aber feine Auswahl an alten Wand - Tisch oder Standuhren."
+					cta="Uhren"
+					href="https://antik70.de/shop/de/wohndekoration/uhren"
+				/>
+			</div>
 		</div>
 	</div>
 </Section>

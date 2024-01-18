@@ -6,6 +6,8 @@
 <a
 	href={SITE.SHOP_LINK}
 	type="button"
+	target="_blank"
+	rel="noopener noreferrer"
 	class:bg-primary={solid}
 	class:bg-transparent={!solid}
 	class:text-white={solid}

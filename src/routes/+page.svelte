@@ -1,10 +1,10 @@
 <script>
-	import LampenFeatures from '$section/Lamps.svelte';
+	import Lampenwelt from '$section/Lampenwelt.svelte';
 	import Hero from '$section/Hero.svelte';
-	import Mega from '$section/MegaBlock.svelte';
+	import RepairHighlight from '$section/RepairHighlight.svelte';
 	import AboutUs from '$section/AboutUs.svelte';
 
-	import Repairs from '$section/Repairs.svelte';
+	import Restaurationen from '$section/Restaurationen.svelte';
 	import { dev } from '$app/environment';
 </script>
 
@@ -21,7 +21,8 @@
 </svelte:head>
 
 <Hero id="home" />
-<LampenFeatures id="lampen" />
-<Mega />
-<Repairs id="restaurationen" />
+<Lampenwelt id="lampen" />
+
+<RepairHighlight />
+<Restaurationen id="restaurationen" />
 <AboutUs id="antik70" />

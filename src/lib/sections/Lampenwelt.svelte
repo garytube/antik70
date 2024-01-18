@@ -5,8 +5,8 @@
 	import Feature from '$lib/components/Feature.svelte';
 	import pic1 from '$assets/lamps/1.jpg';
 	import pic3 from '$assets/lamps/3.jpg';
-	import pic4 from '$assets/2024/IMG_5829.jpg';
-	import pic5 from '$assets/lamps/5.jpg';
+	import pic4 from '$assets/2024/IMG_5828.jpg';
+	import pic5 from '$assets/2024/IMG_5830.jpg';
 	import LinkButton from '$lib/components/LinkButton.svelte';
 	import A from '$lib/components/A.svelte';
 	import H3 from '$lib/components/H3.svelte';
@@ -44,10 +44,10 @@
 			</Feature>
 		</div>
 		<div id="keyfacts_pictures" class=" hidden lg:grid picture_grid gap-8 md:ml-28">
-			<img src={pic1} alt="antik70.de" class="pic1 rounded-[8px] border-[3px] border-primary-DARK" />
-			<img src={pic5} alt="antik70.de" class="pic3 rounded-[8px] border-[3px] border-primary-DARK" />
-			<img src={pic3} alt="antik70.de" class="pic4 rounded-[8px] border-[3px] border-primary-DARK" />
-			<img src={pic4} alt="antik70.de" class="pic2 rounded-[8px] border-[3px] border-primary-DARK" />
+			<img src={pic1} alt="antik70.de" class=" rounded-[8px] border-[3px] border-primary-DARK" />
+			<img src={pic5} alt="antik70.de" class=" rounded-[8px] border-[3px] border-primary-DARK" />
+			<img src={pic3} alt="antik70.de" class=" rounded-[8px] border-[3px] border-primary-DARK" />
+			<img src={pic4} alt="antik70.de" class=" rounded-[8px] border-[3px] border-primary-DARK" />
 			<div class="shop_btn">
 				<LinkButton shop_icon href="https://antik70.de/shop/de/lampenglaeser">Unsere Lampen im Shop</LinkButton>
 			</div>
@@ -63,18 +63,7 @@
 			'pic3 pic4'
 			'shop_btn shop_btn';
 	}
-	.pic1 {
-		grid-area: pic1;
-	}
-	.pic2 {
-		grid-area: pic2;
-	}
-	.pic3 {
-		grid-area: pic3;
-	}
-	.pic4 {
-		grid-area: pic4;
-	}
+
 	.shop_btn {
 		gap: 0;
 		margin: -32px auto 0 auto;
