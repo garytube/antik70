@@ -5,7 +5,7 @@
 	import Feature from '$lib/components/Feature.svelte';
 	import pic1 from '$assets/lamps/1.jpg';
 	import pic3 from '$assets/lamps/3.jpg';
-	import pic4 from '$assets/lamps/4.jpg';
+	import pic4 from '$assets/2024/IMG_5829.jpg';
 	import pic5 from '$assets/lamps/5.jpg';
 	import LinkButton from '$lib/components/LinkButton.svelte';
 	import A from '$lib/components/A.svelte';

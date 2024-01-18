@@ -6,10 +6,11 @@
 	import Slideshow from '$lib/components/Slideshow.svelte';
 	import pic4 from '$assets/lamps/4.jpg';
 	import pic5 from '$assets/store.png';
-	import pic6 from '$assets/lamps/5.jpg';
+	import pic6 from '$assets/2024/IMG_5833.jpg';
+	import IMG_5827 from '$assets/2024/IMG_5827.jpg';
 	export let id: string;
 
-	const pictures = [pic4, pic5, pic6];
+	const pictures = [pic5, IMG_5827, pic4, pic6];
 </script>
 
 <section {id} class=" lg:container lg:mx-auto xl:pt-12 mb-8 md:mb-20 lg:mb-32">
