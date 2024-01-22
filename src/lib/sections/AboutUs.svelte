@@ -76,7 +76,7 @@
 				<FeatureBox
 					title="Raritäten "
 					description="Sammlerstücke, die nicht jeder hat, außergewöhnliche Gegenstände zum Nutzen oder Dekorieren."
-					cta="Antike Möbel & Pflege"
+					cta="Einzelstücke"
 					href="https://antik70.de/shop/raritaeten"
 				/>
 				<FeatureBox

@@ -20,7 +20,7 @@
 		<img class="rounded-md lg:object-contain lg:max-h-[300px] ml-auto border-4" src={pic} alt="Restaurationen" />
 	</div>
 	<div class="grid lg:grid-cols-2 lg:gap-20">
-		<Feature title="Bearbeitun von Weichholzmöbel">
+		<Feature title="Bearbeitung von Weichholzmöbel">
 			Wir schleifen unsere Möbel innen und außen, grundieren dann mit Schellack und schleifen dann die Sichtflächen nochmals fein. Die Oberfläche wird abschließend gewachst. Als
 			Finish polieren wir die gewachsten Oberflächen, damit eine leicht samtig glänzende Oberfläche entsteht. Selbstverständlich wird vorhandener Holzwurm behandelt, Beschläge
 			werden repariert oder erneuert, die Leichtgängigkeit der Schubladen und Schlösser wird sichergestellt, und gegebenenfalls nehmen wir Innenausbauten vor.

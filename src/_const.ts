@@ -45,7 +45,7 @@ export const SITE = {
 			],
 			Beleuchtung: [
 				{ name: 'Glasschirme Opal', href: 'https://antik70.de/shop/lampenglaeser/glasschirme-opal' },
-				{ name: 'Antike Lampengläser', href: 'https://antik70.de/shop/de/lampenglaeser/antike-lampenschirme' },
+				{ name: 'Alte Lampengläser', href: 'https://antik70.de/shop/de/lampenglaeser/antike-lampenschirme' },
 				{ name: 'Tiffany Leuchten', href: 'https://antik70.de/shop/de/beleuchtung/tiffany-leuchten' }
 			],
 			Informationen: [
