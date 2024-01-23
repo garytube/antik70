@@ -1,0 +1,36 @@
+# For more details, read this: https://coolify.io/docs/github-actions
+name: Build Static Image
+on:
+  push:
+    branches: ['master']
+    
+jobs:
+  deployment:
+    runs-on: ubuntu-latest
+    environment: production
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: pnpm-setup
+        uses: pnpm/action-setup@v2
+        with:
+          version: 8
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18.18.2
+          cache: 'pnpm'
+      - name: Install dependencies
+        run: pnpm install
+      - name: Install dependencies
+        run: pnpm build
+      - name: rsync deployments
+        uses: burnett01/rsync-deployments@6.0.0
+        with:
+          switches: -avzr --delete --exclude="" --include="" --filter=""
+          path: build/
+          remote_path: ${{ secrets.SSH_PATH }}
+          remote_host: ${{ secrets.SSH_HOST }}
+          remote_port: ${{ secrets.SSH_PORT }}
+          remote_user: ${{ secrets.SSH_USER }}
+          remote_key: ${{ secrets.DEPLOY_KEY }}
