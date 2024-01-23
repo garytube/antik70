@@ -27,7 +27,7 @@ jobs:
       - name: rsync deployments
         uses: burnett01/rsync-deployments@6.0.0
         with:
-          switches: -avzr --delete --exclude="" --include="" --filter=""
+          switches: -avzr --exclude="shop" --include="" --filter=""
           path: build/
           remote_path: ${{ secrets.SSH_PATH }}
           remote_host: ${{ secrets.SSH_HOST }}
