@@ -11,3 +11,4 @@ vite.config.ts.timestamp-*
 /.wrangler
 .vercel
 .svelte-kit/
+*:Zone.Identifier
