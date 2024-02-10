@@ -4,10 +4,10 @@
 	import H3 from '$lib/components/H3.svelte';
 	import LinkButton from '$lib/components/LinkButton.svelte';
 	import Slideshow from '$lib/components/Slideshow.svelte';
-	import pic4 from '$assets/lamps/4.jpg';
-	import pic5 from '$assets/store.png';
-	import pic6 from '$assets/2024/IMG_5833.jpg';
-	import IMG_5827 from '$assets/2024/IMG_5827.jpg';
+	import pic4 from '$assets/lamps/4.webp';
+	import pic5 from '$assets/store.webp';
+	import pic6 from '$assets/2024/IMG_5833.webp';
+	import IMG_5827 from '$assets/2024/IMG_5827.webp';
 	export let id: string;
 
 	const pictures = [pic5, IMG_5827, pic4, pic6];

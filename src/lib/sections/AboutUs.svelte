@@ -1,5 +1,5 @@
 <script lang="ts">
-	import Store from '$assets/store.png';
+	import Store from '$assets/store.webp';
 	import H2 from '$lib/components/H2.svelte';
 	import P from '$lib/components/P.svelte';
 	import Section from '$lib/components/Section.svelte';
