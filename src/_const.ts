@@ -98,3 +98,102 @@ export const SITE = {
     OPEN_HOURS_4: '11:00 - 14:00 Uhr',
   },
 };
+
+export const SITE_ENG = {
+  TELEPHONE: {
+    LANDLINE: '030 / 81 79 79 45',
+    LANDLINE_HREF: '+493081797945',
+  },
+  EMAIL: 'info (at) antik70.de',
+  EMAIL_HREF: 'info@antik70.de',
+  SHOP_NAME: 'Antik70',
+  SHOP_LINK: 'https://antik70.de/shop',
+  SHOP_TIFFANY: 'https://antik70.de/shop/de/beleuchtung/tiffany-leuchten',
+  DE: {
+    SHOP_TEXT_1: 'Our Shop',
+    SHOP_TEXT_2: 'Discover our rarities',
+    HERO_HEADLINE: 'Timeless elegance through antiques, unique lamps & furniture art.',
+    HERO_SUBLINE:
+      'Antique pieces of furniture from various eras tell their stories of past times whether it’s a Vertiko, chest of drawers, kitchen buffet, cupboard, or secretaries, always restored with love and ready to enrich your home. Experience our world where history and style unite.',
+    HERO_CTA: 'Discover our rarities',
+    RESTORE_HEADLINE: 'Restorations',
+    RESTORE_TEXT:
+      'All old and antique lamps are refurbished and re-electrified by us to meet all required safety standards. For fabric-covered cables, we use a custom-made version with a reinforced interior, ensuring the safe use of our pull-lights. For the electrics, we exclusively use or replace new, VDE-tested parts.',
+    RESTORE_FEATURES: [
+      {
+        title: 'Processing of softwood furniture',
+        text: 'We sand our furniture inside and out, then prime with shellac and then finely sand the visible surfaces again. The surface is finally waxed. As a finish, we polish the waxed surfaces to create a slightly velvety shiny surface. Of course, existing woodworm is treated, fittings are repaired or renewed, the smooth running of drawers and locks is ensured, and, if necessary, interior modifications are made.',
+      },
+      {
+        title: 'Processing of veneered furniture',
+        text: 'Removal of the old shellac by washing, sanding the surfaces, refreshing the veneers, and final shellac polish for a glossy finish. Of course, we also take care of any woodworm infestations, repair or renew fittings, ensure the smooth operation of drawers and locks, and make interior modifications if necessary.',
+      },
+    ],
+    RESTORE_CONTACT_TITLE: 'Questions? Get advice without obligation',
+    RESTORE_CONTACT_TEXT: 'Just whip out the phone or send an email, we’re ready for a relaxed chat. No hocus pocus, promised',
+    RESTORE_CONTACT: '',
+    LAMP_HEADLINE: 'Lighting of a special kind Diversity and uniqueness in our lamp world',
+    LAMP_FEATURES: [
+      {
+        title: 'Old lamp glasses',
+        text: 'We offer selected old lamp glasses, some of which are more than 100 years old. The shades are used but not defective. Minimal chips on the glass holder are considered normal after years of use. You can view other unique pieces in our showrooms',
+        href: 'https://antik70.de/shop/de/lampenglaeser/antike-lampenschirme',
+        cta: 'Old lampshades',
+      },
+      {
+        title: 'Glass shade replacement glass lamp glass',
+        text: 'Classic shapes in opal, various colors, special surfaces, and different sizes of individual models offer an unexpected variety for equipping your lamp frames.',
+        href: 'https://antik70.de/shop/lampenglaeser',
+        cta: 'Lamp glasses & replacement shades',
+      },
+      {
+        title: 'Tiffany lamps',
+        text: 'For many, the pinnacle of light art. Tiffany lamps for table, ceiling, wall, and floor; each crafted to perfection in shades that do honor to the original models. We offer a selection of lamps with Tiffany shades',
+        href: 'https://antik70.de/shop/de/beleuchtung/tiffany-leuchten',
+        cta: 'Lamp models in our exhibition',
+      },
+    ],
+    NAVI_LINKS: [
+      {
+        label: 'Lamps',
+        href: '#lampen',
+      },
+      {
+        label: 'Restorations',
+        href: '#restaurationen',
+      },
+      {
+        label: 'Our Story',
+        href: '#antik70',
+      },
+    ],
+    FOOTER_LINKS: {
+      Antik70: [
+        { name: 'Contact', href: 'https://antik70.de/shop/de/kontakt' },
+        { name: 'About Us', href: '#antik70' },
+        { name: 'Legal Notice', href: 'https://antik70.de/shop/de/Impressum' },
+      ],
+      'Our Shop': [
+        { name: 'Antique Furniture', href: 'https://antik70.de/shop/de/antike-moebel' },
+        { name: 'Lamp Glasses', href: 'https://antik70.de/shop/lampenglaeser' },
+        { name: 'Special Offers', href: 'https://antik70.de/shop/raritaeten' },
+      ],
+      Lighting: [
+        { name: 'Opal Glass Shades', href: 'https://antik70.de/shop/lampenglaeser/glasschirme-opal' },
+        { name: 'Old Lamp Glasses', href: 'https://antik70.de/shop/de/lampenglaeser/antike-lampenschirme' },
+        { name: 'Tiffany Lamps', href: 'https://antik70.de/shop/de/beleuchtung/tiffany-leuchten' },
+      ],
+      Information: [
+        { name: 'Payment Methods & Shipping Costs', href: 'https://antik70.de/shop/de/Liefer-und-Versandkosten' },
+        { name: 'Our Terms and Conditions', href: 'https://antik70.de/shop/de/Unsere-AGB' },
+        { name: 'Right of Withdrawal', href: 'https://antik70.de/shop/de/Widerrufsrecht' },
+      ],
+    },
+
+    OPEN_HOURS: 'Opening Hours',
+    OPEN_HOURS_1: 'Monday to Friday',
+    OPEN_HOURS_2: '11:00 AM - 6:00 PM',
+    OPEN_HOURS_3: 'New: Saturday',
+    OPEN_HOURS_4: '11:00 AM - 2:00 PM',
+  },
+};
