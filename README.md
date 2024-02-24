@@ -1,4 +1,4 @@
-# ntik70 Website Repository README
+# Antik70 Website Repository README
 Welcome to Antik70
 This repository is the home of the Antik70 website source code, a platform showcasing a unique collection of antique furniture, lamps, and art pieces. Each item is a testament to timeless elegance and history, meticulously restored to bring warmth and character to modern spaces.
 
