@@ -9,8 +9,8 @@
 </script>
 
 <TailwindDebug></TailwindDebug>
-<div class="fixed top-0 w-full z-50 bg-redish-LIGHT text-white font-medium px-2 py-2.5 flex flex-1 gap-2 items-center justify-center">
-	<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+<div class="md:fixed top-0 w-full z-50 text-sm md:text-base bg-redish-LIGHT text-white font-medium px-2 py-2.5 md:flex flex-1 gap-2 items-center text-center justify-center">
+	<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 hidden md:block">
 		<path
 			stroke-linecap="round"
 			stroke-linejoin="round"
