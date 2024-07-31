@@ -1,6 +1,5 @@
 <script lang="ts">
 	import { dev } from '$app/environment';
-	import { onMount } from 'svelte';
 	let innerWidth = 0;
 	let innerHeight = 0;
 

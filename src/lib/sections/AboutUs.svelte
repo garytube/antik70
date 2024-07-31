@@ -63,7 +63,7 @@
 
 		<div class="grid items-start gap-y-6 h-min">
 			<img src={Store} alt="Gneisenaustraße 70 - 10961 Berlin Kreuzberg" class="hidden lg:block rounded-xl border-[3px] border-primary-DARK" />
-			<div id="open" class="hidden lg:block self-start justify-self-start text-left grid grid-cols-3 gap-3 justify-evenly">
+			<div id="open" class=" lg:block self-start justify-self-start text-left grid grid-cols-3 gap-3 justify-evenly">
 				<OpenHoures />
 			</div>
 			<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-6 w-[300px] md:w-auto">
@@ -91,13 +91,6 @@
 </Section>
 
 <style>
-	.about_grid {
-		display: grid;
-		grid-template-columns: 1.5fr 0.6fr;
-		grid-template-rows: auto;
-		gap: 2rem;
-	}
-
 	.anfahrt-grid {
 		font-size: 14px;
 		display: grid;

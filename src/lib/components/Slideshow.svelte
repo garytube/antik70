@@ -11,7 +11,7 @@
 
 	$: slide = slides[index];
 
-	function setSlide(i: any) {
+	function setSlide(i: number) {
 		if (i == index) return;
 		index = i;
 	}

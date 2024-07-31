@@ -1,7 +1,3 @@
-<script>
-	const dark = true;
-</script>
-
 <a href="/" title="Home">
 	<svg xmlns="http://www.w3.org/2000/svg" class="w-[200px] md:w-[240px] xl:w-[319px] transform-gpu duration-300" viewBox="0 0 319.301 52.953">
 		<g transform="translate(0 1)">

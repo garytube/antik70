@@ -49,10 +49,4 @@
 			'pic3 pic4'
 			'shop_btn shop_btn';
 	}
-
-	.shop_btn {
-		gap: 0;
-		margin: -32px auto 0 auto;
-		grid-area: shop_btn;
-	}
 </style>
