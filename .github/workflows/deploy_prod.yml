@@ -25,9 +25,9 @@ jobs:
       - name: Install dependencies
         run: pnpm build
       - name: rsync deployments
-        uses: burnett01/rsync-deployments@6.0.0
+        uses: burnett01/rsync-deployments@7.0.1
         with:
-          switches: -avzr --exclude="shop" --include="" --filter=""
+          switches: -avzr --exclude="shop"
           path: build/
           remote_path: ${{ secrets.SSH_PATH }}
           remote_host: ${{ secrets.SSH_HOST }}
