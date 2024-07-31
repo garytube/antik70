@@ -3,7 +3,7 @@
 	let innerWidth = 0;
 	let innerHeight = 0;
 
-	const hide = (e: any) => (e.target.style.display = 'none');
+	const hide = (e: MouseEvent) => ((e.target as HTMLElement).style.display = 'none');
 </script>
 
 <svelte:window bind:innerWidth bind:innerHeight />
