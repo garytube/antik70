@@ -35,13 +35,13 @@ export const SITE = {
 		LAMP_FEATURES: [
 			{
 				title: 'Alte Lampengläser',
-				text: 'Wir führen ausgewählte alte Lampengläser, die teilweise mehr als 100 Jahre alt sind. Die Schirme sind gebraucht aber nicht defekt. Minimale Abplatzer am Glashalter sindnach jahrelangen Gebrauch als normal anzusehen. Weitere Einzelstücke können Sie in unseren Ausstellungsräumen betrachten',
+				text: 'Wir führen ausgewählte alte Lampengläser, die teilweise mehr als 100 Jahre alt sind. Die Schirme sind gebraucht aber nicht defekt. Minimale Abplatzer am Glashalter sind nach jahrelangen Gebrauch als normal anzusehen. Weitere Einzelstücke können Sie in unseren Ausstellungsräumen betrachten',
 				href: 'https://antik70.de/shop/de/lampenglaeser/antike-lampenschirme',
 				cta: 'Alte Lampenschirme'
 			},
 			{
 				title: 'Glasschirm Ersatzglas Lampenglas',
-				text: 'Klassische Formen in opal, diverse Farben, spezielle Oberflächen und verschiedene Größen der einzelnen Modelle ergeben eine ungeahnte Vielfalt zur Bestückung IhrerLampengestelle.',
+				text: 'Klassische Formen in opal, diverse Farben, spezielle Oberflächen und verschiedene Größen der einzelnen Modelle ergeben eine ungeahnte Vielfalt zur Bestückung Ihrer Lampengestelle.',
 				href: 'https://antik70.de/shop/lampenglaeser',
 				cta: 'Lampengläser & Ersatzschirme'
 			},
