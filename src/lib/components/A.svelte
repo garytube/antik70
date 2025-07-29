@@ -19,5 +19,5 @@
 		/>
 		<path stroke-linecap="round" stroke-linejoin="round" d="M6 6h.008v.008H6V6z" />
 	</svg>
-	<div class="absolute h-[1px] bottom-1 rounded-xl bg-redish w-full" />
+	<div class="absolute h-[1px] bottom-1 rounded-xl bg-redish w-full"></div>
 </a>

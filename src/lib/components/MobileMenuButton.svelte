@@ -10,7 +10,7 @@
 		aria-controls="mobile-menu"
 		aria-expanded="false"
 	>
-		<span class="absolute -inset-0.5" />
+		<span class="absolute -inset-0.5"></span>
 		<span class="sr-only">
 			{#if open}
 				Open main menu

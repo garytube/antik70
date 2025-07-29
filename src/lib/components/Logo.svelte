@@ -1,4 +1,4 @@
-<a href="/" title="Home">
+<a href="/" title="Home" aria-label="Home">
 	<svg xmlns="http://www.w3.org/2000/svg" class="w-[200px] md:w-[240px] xl:w-[319px] transform-gpu duration-300" viewBox="0 0 319.301 52.953">
 		<g transform="translate(0 1)">
 			<line y1="51" transform="translate(153.734)" class="stroke-primary" stroke-linecap="round" stroke-width="2"></line>
