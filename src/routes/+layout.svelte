@@ -9,16 +9,6 @@
 </script>
 
 <TailwindDebug></TailwindDebug>
-<div class=" w-full z-50 bg-redish-LIGHT text-white font-medium px-2 py-2.5">
-	<div class="text-center mx-auto text-sm sm:text-base leading-relaxed">
-		<span class="font-semibold">Betriebsferien:</span>
-		<br />
-		Antik70 macht vom <span class="font-bold text-yellow-200">14.07.2025</span> bis <span class="font-bold text-yellow-200">02.08.2025</span> Urlaub.<br />
-		Das Ladengeschäft bleibt geschlossen.<br />
-		<span class="italic">Shop-Bestellungen werden 2× wöchentlich bearbeitet.</span><br />
-		Ab dem <span class="font-bold text-yellow-200">04.08.2025</span> sind wir wieder für Sie da!
-	</div>
-</div>
 <header class="px-6 lg:container relative flex my-8 lg:mt-16 lg:mb-8">
 	<Logo />
 	<Navigation />
