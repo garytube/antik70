@@ -85,8 +85,26 @@ export const SITE = {
 			Informationen: [
 				{ name: 'Zahlarten & Versandkosten', href: 'https://antik70.de/shop/de/Liefer-und-Versandkosten' },
 				{ name: 'Unsere AGBs', href: 'https://antik70.de/shop/de/Unsere-AGB' },
-				{ name: 'Widerrufsrecht', href: 'https://antik70.de/shop/de/Widerrufsrecht' }
+				{ name: 'Widerrufsrecht', href: 'https://antik70.de/shop/de/Widerrufsrecht' },
+				{ name: 'Vertrag widerrufen', href: '/widerruf' }
 			]
+		},
+
+		WIDERRUF: {
+			BUTTON: 'Vertrag widerrufen',
+			CONFIRM_BUTTON: 'Widerruf verbindlich bestätigen',
+			TITLE: 'Vertrag widerrufen',
+			INTRO:
+				'Mit diesem Formular können Sie einen mit uns geschlossenen Vertrag innerhalb der Widerrufsfrist widerrufen. Bitte füllen Sie die Pflichtfelder aus. Im nächsten Schritt sehen Sie eine Zusammenfassung und bestätigen den Widerruf verbindlich. Anschließend erhalten Sie eine Eingangsbestätigung per E-Mail.',
+			REVIEW_TITLE: 'Bitte prüfen Sie Ihre Angaben',
+			REVIEW_HINT:
+				'Mit Klick auf „Widerruf verbindlich bestätigen“ erklären Sie den Widerruf des unten genannten Vertrags. Wir senden Ihnen anschließend eine Eingangsbestätigung mit Datum und Uhrzeit an die angegebene E-Mail-Adresse.',
+			SUCCESS_TITLE: 'Ihr Widerruf ist eingegangen',
+			SUCCESS_TEXT: 'Wir haben Ihren Widerruf erhalten und Ihnen eine Eingangsbestätigung per E-Mail gesendet. Bitte bewahren Sie diese Bestätigung auf.',
+			FALLBACK_TITLE: 'Bitte senden Sie uns Ihren Widerruf per E-Mail',
+			FALLBACK_TEXT:
+				'Der automatische Versand ist derzeit nicht verfügbar. Bitte senden Sie uns Ihren Widerruf über die unten vorbereitete E-Mail. Ihre Angaben sind bereits eingetragen.',
+			EMAIL_SUBJECT: 'Widerruf eines Vertrags'
 		},
 
 		OPEN_HOURS: 'Öffnungszeiten',

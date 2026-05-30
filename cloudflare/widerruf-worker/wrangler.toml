@@ -1,0 +1,12 @@
+name = "antik70-widerruf"
+main = "src/index.js"
+compatibility_date = "2026-01-01"
+
+# Öffentliche Variablen (kein Geheimnis)
+[vars]
+FROM_EMAIL = "Antik70 <widerruf@antik70.de>"
+OWNER_EMAIL = "info@antik70.de"
+ALLOWED_ORIGIN = "https://antik70.de"
+
+# Secret separat setzen (nicht hier eintragen!):
+#   npx wrangler secret put RESEND_API_KEY

@@ -11,7 +11,7 @@
 				<ul>
 					{#each links as link}
 						<li class="text-xs md:text-base md:mb-2 last:mb-0 hover:text-highlight">
-							<a target="_blank" href={link.href}>{link.name}</a>
+							<a target={link.href.startsWith('http') ? '_blank' : undefined} href={link.href.startsWith('#') ? `/${link.href}` : link.href}>{link.name}</a>
 						</li>
 					{/each}
 				</ul>
