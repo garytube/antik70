@@ -1,6 +1,8 @@
 <script lang="ts">
 	import { SITE } from '$const';
 	import { env } from '$env/dynamic/public';
+	import { onMount, tick } from 'svelte';
+	import { browser } from '$app/environment';
 
 	const W = SITE.DE.WIDERRUF;
 
@@ -10,6 +12,55 @@
 	let submitting = false;
 	let confirmedAt = '';
 	let errors: Record<string, string> = {};
+
+	// Cloudflare Turnstile (Bot-Schutz). Sitekey wird erst im Browser gelesen,
+	// damit das Prerendern nicht fehlschlägt. Ist kein Sitekey gesetzt, läuft
+	// der Bot-Schutz nicht – der Worker lehnt dann fail-closed ab.
+	let turnstileSitekey = '';
+	let turnstileToken = '';
+	let turnstileEl: HTMLDivElement | undefined;
+	let turnstileWidgetId: string | undefined;
+
+	onMount(() => {
+		turnstileSitekey = env.PUBLIC_TURNSTILE_SITEKEY ?? '';
+		if (turnstileSitekey) {
+			const s = document.createElement('script');
+			s.src = 'https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit';
+			s.async = true;
+			s.defer = true;
+			document.head.appendChild(s);
+		}
+	});
+
+	function renderTurnstile() {
+		if (!browser || !turnstileSitekey || !turnstileEl) return;
+		// @ts-expect-error – Turnstile injiziert window.turnstile
+		const ts = window.turnstile;
+		if (!ts) {
+			setTimeout(renderTurnstile, 200);
+			return;
+		}
+		if (turnstileWidgetId !== undefined) return;
+		turnstileWidgetId = ts.render(turnstileEl, {
+			sitekey: turnstileSitekey,
+			callback: (token: string) => (turnstileToken = token),
+			'error-callback': () => (turnstileToken = ''),
+			'expired-callback': () => (turnstileToken = '')
+		});
+	}
+
+	function resetTurnstile() {
+		// @ts-expect-error – Turnstile injiziert window.turnstile
+		const ts = browser ? window.turnstile : undefined;
+		if (ts && turnstileWidgetId !== undefined) ts.remove(turnstileWidgetId);
+		turnstileWidgetId = undefined;
+		turnstileToken = '';
+	}
+
+	// Beim Eintritt in den Bestätigungsschritt das Widget rendern.
+	$: if (step === 'review' && turnstileSitekey && turnstileWidgetId === undefined) {
+		tick().then(renderTurnstile);
+	}
 
 	let form = {
 		name: '',
@@ -38,6 +89,11 @@
 		}
 	}
 
+	function backToForm() {
+		resetTurnstile();
+		step = 'form';
+	}
+
 	function buildMailtoBody(): string {
 		const lines = [
 			'Hiermit widerrufe ich den von mir abgeschlossenen Vertrag.',
@@ -60,9 +116,6 @@
 		`mailto:${SITE.EMAIL_HREF}` + `?subject=${encodeURIComponent(W.EMAIL_SUBJECT + ' – Bestellung ' + form.orderNumber)}` + `&body=${encodeURIComponent(buildMailtoBody())}`;
 
 	async function confirm() {
-		submitting = true;
-		const submittedAt = new Date().toISOString();
-
 		// Cloudflare-Endpoint (Worker / Pages Function), der die E-Mails versendet.
 		// Wird über die Umgebungsvariable PUBLIC_WIDERRUF_ENDPOINT gesetzt.
 		// Erst hier (im Browser) gelesen, damit das Prerendern nicht fehlschlägt.
@@ -71,23 +124,32 @@
 
 		if (!endpoint) {
 			// Cloudflare-Versand noch nicht eingerichtet -> mailto-Fallback.
-			submitting = false;
 			step = 'fallback';
 			scrollTo({ top: 0, behavior: 'smooth' });
 			return;
 		}
 
+		// Bot-Schutz: ohne gelösten Turnstile keinen Versand auslösen.
+		if (turnstileSitekey && !turnstileToken) {
+			errors = { turnstile: 'Bitte bestätigen Sie, dass Sie kein Roboter sind.' };
+			return;
+		}
+
+		submitting = true;
+		const submittedAt = new Date().toISOString();
+
 		try {
 			const res = await fetch(endpoint, {
 				method: 'POST',
 				headers: { 'Content-Type': 'application/json' },
-				body: JSON.stringify({ ...form, submittedAt })
+				body: JSON.stringify({ ...form, submittedAt, turnstileToken })
 			});
 			if (!res.ok) throw new Error(`HTTP ${res.status}`);
 			confirmedAt = new Date().toLocaleString('de-DE');
 			step = 'success';
 		} catch (e) {
 			// Versand fehlgeschlagen -> mailto-Fallback, damit der Widerruf nie verloren geht.
+			resetTurnstile();
 			step = 'fallback';
 		} finally {
 			submitting = false;
@@ -206,12 +268,13 @@
 			{/each}
 		</dl>
 
+		{#if turnstileSitekey}
+			<div class="mt-6" bind:this={turnstileEl}></div>
+			{#if errors.turnstile}<p class="text-sm text-redish mt-2">{errors.turnstile}</p>{/if}
+		{/if}
+
 		<div class="flex flex-wrap gap-3 mt-6">
-			<button
-				type="button"
-				on:click={() => (step = 'form')}
-				class="text-base px-5 py-2.5 rounded-xl border-2 border-primary text-primary hover:bg-primary hover:text-white transition-colors"
-			>
+			<button type="button" on:click={backToForm} class="text-base px-5 py-2.5 rounded-xl border-2 border-primary text-primary hover:bg-primary hover:text-white transition-colors">
 				Zurück / ändern
 			</button>
 			<button

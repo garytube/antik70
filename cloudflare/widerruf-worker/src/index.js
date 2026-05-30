@@ -11,10 +11,17 @@
  * Betreiber-Benachrichtigung). Siehe README.
  *
  * Benötigte Secrets / Variablen (via `wrangler secret put` bzw. wrangler.toml):
- *   - RESEND_API_KEY   (Secret)  API-Key des E-Mail-Dienstes
- *   - FROM_EMAIL       (Var)     Absender, z. B. "Antik70 <widerruf@antik70.de>"
- *   - OWNER_EMAIL      (Var)     Postfach des Betreibers, z. B. "info@antik70.de"
- *   - ALLOWED_ORIGIN   (Var)     erlaubte Herkunft, z. B. "https://antik70.de"
+ *   - RESEND_API_KEY    (Secret)  API-Key des E-Mail-Dienstes
+ *   - TURNSTILE_SECRET  (Secret)  Cloudflare-Turnstile-Secret (Bot-Schutz, PFLICHT)
+ *   - FROM_EMAIL        (Var)     Absender, z. B. "Antik70 <widerruf@antik70.de>"
+ *   - OWNER_EMAIL       (Var)     Postfach des Betreibers, z. B. "info@antik70.de"
+ *   - ALLOWED_ORIGIN    (Var)     erlaubte Herkunft, z. B. "https://antik70.de"
+ *   - RATE_LIMITER      (Binding) optional: Workers-Rate-Limiting (siehe wrangler.toml)
+ *
+ * Missbrauchsschutz (sonst offenes Mail-Relay!):
+ *   1. Origin-Prüfung gegen ALLOWED_ORIGIN
+ *   2. optionales Rate-Limit pro IP
+ *   3. Cloudflare Turnstile (fail-closed: ohne gültiges Token kein Versand)
  */
 
 export default {
@@ -22,7 +29,8 @@ export default {
 		const cors = {
 			'Access-Control-Allow-Origin': env.ALLOWED_ORIGIN || '*',
 			'Access-Control-Allow-Methods': 'POST, OPTIONS',
-			'Access-Control-Allow-Headers': 'Content-Type'
+			'Access-Control-Allow-Headers': 'Content-Type',
+			Vary: 'Origin'
 		};
 
 		if (request.method === 'OPTIONS') {
@@ -32,11 +40,38 @@ export default {
 			return json({ error: 'Method not allowed' }, 405, cors);
 		}
 
+		// 1) Origin-Prüfung. Browser senden Origin bei Cross-Origin-POSTs; stimmt
+		// dieser nicht, sofort ablehnen. (Schützt nicht gegen Clients ohne Origin
+		// – dafür greift der Turnstile-Check unten.)
+		const origin = request.headers.get('Origin');
+		if (env.ALLOWED_ORIGIN && origin && origin !== env.ALLOWED_ORIGIN) {
+			return json({ error: 'Forbidden origin' }, 403, cors);
+		}
+
+		const clientIp = request.headers.get('CF-Connecting-IP') || 'unknown';
+
+		// 2) Rate-Limit pro IP (optional, nur wenn Binding konfiguriert).
+		if (env.RATE_LIMITER) {
+			const { success } = await env.RATE_LIMITER.limit({ key: clientIp });
+			if (!success) {
+				return json({ error: 'Zu viele Anfragen. Bitte später erneut versuchen.' }, 429, cors);
+			}
+		}
+
 		let data;
 		try {
 			data = await request.json();
 		} catch {
 			return json({ error: 'Invalid JSON' }, 400, cors);
+		}
+
+		// 3) Turnstile-Verifikation – fail-closed: ohne Secret kein Versand.
+		if (!env.TURNSTILE_SECRET) {
+			return json({ error: 'Server misconfigured: TURNSTILE_SECRET fehlt' }, 500, cors);
+		}
+		const human = await verifyTurnstile(env.TURNSTILE_SECRET, data.turnstileToken, clientIp);
+		if (!human) {
+			return json({ error: 'Bot-Schutz fehlgeschlagen' }, 403, cors);
 		}
 
 		const { name, email, orderNumber } = data;
@@ -73,6 +108,21 @@ export default {
 		return json({ ok: true, receivedAt }, 200, cors);
 	}
 };
+
+async function verifyTurnstile(secret, token, ip) {
+	if (!token) return false;
+	const body = new FormData();
+	body.append('secret', secret);
+	body.append('response', token);
+	if (ip && ip !== 'unknown') body.append('remoteip', ip);
+	const res = await fetch('https://challenges.cloudflare.com/turnstile/v0/siteverify', {
+		method: 'POST',
+		body
+	});
+	if (!res.ok) return false;
+	const data = await res.json();
+	return data.success === true;
+}
 
 function formatSummary(d, receivedAt) {
 	const rows = [
