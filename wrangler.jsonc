@@ -1,9 +1,13 @@
 {
 	"$schema": "./node_modules/wrangler/config-schema.json",
-	"name": "antik702",
+	"account_id": "3d97509e46416f501bb286fda0e060ab",
 	"compatibility_date": "2026-05-31",
 	"compatibility_flags": ["nodejs_als"],
 	"main": ".svelte-kit/cloudflare/_worker.js",
+	"name": "antik70",
+	"build": {
+		"command": "pnpm exec vite build"
+	},
 	"assets": {
 		"binding": "ASSETS",
 		"directory": ".svelte-kit/cloudflare"
