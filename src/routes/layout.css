@@ -1,0 +1,4 @@
+@import 'tailwindcss';
+@config '../../tailwind.config.cjs';
+@plugin '@tailwindcss/forms';
+@plugin '@tailwindcss/typography';
