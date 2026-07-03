@@ -7,17 +7,20 @@ const config = {
 			gridTemplateColumns: {
 				about: '1.5fr 0.6fr',
 				hero: 'minmax(250px, 1fr) 1fr',
-				footer: '230px 230px 230px 230px 1fr'
+				footer: '230px 230px 230px 1fr'
 			},
 			borderRadius: {
 				text: '1em'
 			},
 			fontSize: {
-				'6xl': ['58px', '72px']
+				'6xl': ['58px', '68px'],
+				'7xl': ['72px', '80px']
 			},
 			screens: {
 				'2xl': '1536px'
-				// => @media (min-width: 1536px) { ... }
+			},
+			letterSpacing: {
+				widest2: '0.2em'
 			}
 		},
 		colors: {
@@ -25,17 +28,22 @@ const config = {
 			current: 'currentColor',
 			black: '#000',
 			primary: {
-				DEFAULT: '#372922',
-				DARK: '#21130C',
-				VERYDARK: 'rgb(21 16 13)'
+				DEFAULT: '#2C1A12',
+				DARK: '#1a0f09',
+				VERYDARK: 'rgb(14 8 4)'
 			},
-			redish: {
-				LIGHT: '#ab2d36',
-				DEFAULT: '#571616'
+			amber: {
+				DEFAULT: '#C8965A',
+				LIGHT: '#DEAA82',
+				DARK: '#9A6A38'
 			},
-			beige: '#F7ECE4',
-			white: '#fff',
-			highlight: '#DEAA82'
+			beige: {
+				DEFAULT: '#F5EDE3',
+				DARK: '#EAD9C8',
+				LIGHT: '#FAF5F0'
+			},
+			stone: '#8C7B6E',
+			white: '#fff'
 		},
 		fontFamily: {
 			sans: ['Source Sans Pro', 'sans-serif'],
@@ -44,7 +52,7 @@ const config = {
 		container: {
 			center: true,
 			padding: {
-				DEFAULT: '1rem',
+				DEFAULT: '1.5rem',
 				xl: '4rem'
 			}
 		}

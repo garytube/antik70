@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
 	import { fade } from 'svelte/transition';
+
 	interface Props {
 		pictures?: Array<string>;
 		speed?: number;
@@ -12,48 +13,54 @@
 	let paused = $state(false);
 
 	let slides = $derived(Object.values(pictures));
-
 	let slide = $derived(slides[index]);
 
 	function setSlide(i: number) {
-		if (i == index) return;
+		if (i === index) return;
 		index = i;
 	}
 
 	onMount(() => {
 		const counter = setInterval(() => {
 			if (paused) return;
-			if (index == slides.length - 1) {
-				index = 0;
-			} else {
-				++index;
-			}
+			index = index === slides.length - 1 ? 0 : index + 1;
 		}, speed);
 		return () => clearInterval(counter);
 	});
 </script>
 
-{#if slides}
-	<!-- content here -->
-
+{#if slides.length}
 	<!-- svelte-ignore a11y_no_static_element_interactions -->
 	<div
 		onfocus={() => (paused = true)}
 		onmouseover={() => (paused = true)}
 		onmouseleave={() => (paused = false)}
-		class="flex flex-col lg:ml-auto slideshow w-full xl:max-w-[480px]"
-		class:paused
+		class="relative w-full"
 	>
-		{#key slide}
-			<img class="max-h-[340px] md:max-h-[470px] border-[6px] object-cover md:rounded-lg border-primary-DARK" src={slide} alt={index.toString()} />
-		{/key}
-		<div class="flex flex-row space-x-2 mt-4 mx-auto duration-200 xl:max-w-[480px]">
-			{#each slides as item, i (item)}
-				<button onclick={() => setSlide(i)} class="flex buttlet w-4 h-4 bg-primary rounded-full">
-					{#if i === index}
-						<div transition:fade class="w-3 h-3 border-2 border-[#DEAA82] rounded-full mx-auto my-auto"></div>
-					{/if}
-				</button>
+		<!-- Main image -->
+		<div class="relative overflow-hidden rounded-2xl aspect-[4/3] bg-beige-dark shadow-xl">
+			{#key slide}
+				<img
+					transition:fade={{ duration: 600 }}
+					src={slide}
+					alt="Antik70 Fundstück"
+					class="absolute inset-0 w-full h-full object-cover"
+				/>
+			{/key}
+			<!-- Overlay label -->
+			<div class="absolute bottom-4 left-4">
+				<span class="tag tag-available">Antik70 Original</span>
+			</div>
+		</div>
+
+		<!-- Dot indicators -->
+		<div class="flex gap-2 mt-4 justify-center">
+			{#each slides as _item, i (_item)}
+				<button
+					onclick={() => setSlide(i)}
+					aria-label="Bild {i + 1}"
+					class="w-2 h-2 rounded-full transition-all duration-300 {i === index ? 'bg-primary w-6' : 'bg-amber-light'}"
+				></button>
 			{/each}
 		</div>
 	</div>

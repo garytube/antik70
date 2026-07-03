@@ -2,3 +2,68 @@
 @config '../../tailwind.config.cjs';
 @plugin '@tailwindcss/forms';
 @plugin '@tailwindcss/typography';
+
+/* Antik70 design tokens — extend Tailwind v4 theme */
+@theme {
+	--color-primary: #2C1A12;
+	--color-primary-dark: #1a0f09;
+	--color-primary-verydark: rgb(14 8 4);
+
+	--color-amber: #C8965A;
+	--color-amber-light: #DEAA82;
+	--color-amber-dark: #9A6A38;
+
+	--color-beige: #F5EDE3;
+	--color-beige-dark: #EAD9C8;
+	--color-beige-light: #FAF5F0;
+
+	--color-stone: #8C7B6E;
+
+	--font-sans: 'Source Sans Pro', sans-serif;
+	--font-serif: 'Playfair Display', serif;
+}
+
+/* Tag utility */
+.tag {
+	display: inline-block;
+	font-size: 0.68rem;
+	font-weight: 700;
+	letter-spacing: 0.14em;
+	text-transform: uppercase;
+	padding: 0.2rem 0.65rem;
+	border-radius: 2rem;
+}
+
+.tag-available {
+	background-color: #2C1A12;
+	color: #FAF5F0;
+}
+
+.tag-reserved {
+	background-color: #8C7B6E;
+	color: #FAF5F0;
+}
+
+/* Divider */
+.divider {
+	border: none;
+	border-top: 1px solid #EAD9C8;
+}
+
+/* Marquee ticker */
+@keyframes ticker {
+	from { transform: translateX(0); }
+	to   { transform: translateX(-50%); }
+}
+.animate-ticker {
+	animation: ticker 28s linear infinite;
+}
+
+/* Fade-up entrance */
+@keyframes fadeUp {
+	from { opacity: 0; transform: translateY(20px); }
+	to   { opacity: 1; transform: translateY(0); }
+}
+.fade-up {
+	animation: fadeUp 0.65s ease-out both;
+}

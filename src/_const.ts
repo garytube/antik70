@@ -3,96 +3,122 @@ export const SITE = {
 		LANDLINE: '030 / 81 79 79 45',
 		LANDLINE_HREF: '+493081797945'
 	},
-	EMAIL: 'info (at) antik70.de',
+	EMAIL: 'info@antik70.de',
 	EMAIL_HREF: 'info@antik70.de',
 	SHOP_NAME: 'Antik70',
-	SHOP_LINK: 'https://antik70.de/shop',
-	SHOP_TIFFANY: 'https://antik70.de/shop/de/beleuchtung/tiffany-leuchten',
 	DE: {
-		SHOP_TEXT_1: 'Unser Shop',
-		SHOP_TEXT_2: 'Entdecken Sie unsere Rarietäten',
-		HERO_HEADLINE: 'Zeitlose Eleganz durch Antiquitäten, Einzigartige Lampen & Möbelkunst.',
+		HERO_HEADLINE: 'Wir finden, restaurieren & verkaufen zeitlose Stücke.',
 		HERO_SUBLINE:
-			'Antike Möbelstücke aus den vielen Epochen erzählen Ihre Geschichte vergangener Zeiten egal ob Vertiko, Kommode, Küchenbuffet, Schrank oder Sekretäre immer mit Liebe restauriert und bereit Ihr Zuhause zu bereichern. Erleben Sie unsere Welt in der sich Geschichte und Stil vereinigen.',
-		HERO_CTA: 'Entdecken Sie unsere Raritäten',
-		RESTORE_HEADLINE: 'Restaurationen',
+			'Antik70 ist kein Laden mehr — wir sind ein kleines Berliner Team das alte Möbel aufspürt, liebevoll restauriert und direkt weitergibt. Kein Shop, keine Kataloge. Einfach anfragen, wenn etwas Ihr Herz berührt.',
+		HERO_CTA: 'Jetzt anfragen',
+		FINDS_HEADLINE: 'Neueste Fundstücke',
+		FINDS_SUBLINE:
+			'Alles was Sie hier sehen ist verfügbar. Schreiben Sie uns einfach — wir antworten persönlich.',
+		FINDS: [
+			{
+				title: 'Gründerzeit-Vertiko',
+				period: 'um 1890',
+				description: 'Massivholz, frisch restauriert, neues Schloss, poliert mit Schellack.',
+				status: 'Verfügbar'
+			},
+			{
+				title: 'Messingpendelleuchte',
+				period: 'um 1920',
+				description: 'Alte Zuglampe, vollständig neu elektrifiziert, VDE-geprüft.',
+				status: 'Verfügbar'
+			},
+			{
+				title: 'Jugendstil-Kommode',
+				period: 'um 1905',
+				description: 'Furnier aufgefrischt, Schellackpolitur, neue Beschläge.',
+				status: 'Reserviert'
+			},
+			{
+				title: 'Tiffany-Tischlampe',
+				period: 'um 1910',
+				description: 'Original Bleiverglasung, neue Fassung, restaurierter Messing-Ständer.',
+				status: 'Verfügbar'
+			},
+			{
+				title: 'Küchenbuffet Weichholz',
+				period: 'um 1930',
+				description: 'Geschliffen, Schellack-Grundierung, Antikwachs-Finish.',
+				status: 'Verfügbar'
+			},
+			{
+				title: 'Wandspiegel mit Holzrahmen',
+				period: 'um 1895',
+				description: 'Rahmen restauriert, Spiegel original, Rückwand erneuert.',
+				status: 'Verfügbar'
+			}
+		],
+		RESTORE_HEADLINE: 'Restaurierung mit Handwerk & Geduld',
 		RESTORE_TEXT:
-			'Alle alten und antiken Lampen werden von uns aufgearbeitet und neu elektrifiziert, um sämtliche erforderlichen Sicherheitsstandards zu erfüllen. Bei stoffummantelten Kabeln		verwenden wir eine Spezialanfertigung mit einem verstärkten Innenleben, was die unbedenkliche Nutzung unserer Zugleuchten gewährleistet. Für die Elektrik werden		ausschließlich neue, VDE-geprüfte Teile verbaut oder ersetzt.',
+			'Jedes Stück das durch unsere Hände geht wird von Grund auf behandelt — nicht nur aufgehübscht. Wir schleifen, grundieren, wachsen und polieren. Alte Elektrik wird komplett ersetzt. Beschläge repariert oder neu. Das dauert, aber es lohnt sich.',
 		RESTORE_FEATURES: [
 			{
-				title: 'Bearbeitung von Weichholzmöbel',
-				text: 'Wir schleifen unsere Möbel innen und außen, grundieren dann mit Schellack und schleifen dann die Sichtflächen nochmals fein. Die Oberfläche wird abschließend gewachst. Als Finish polieren wir die gewachsten Oberflächen, damit eine leicht samtig glänzende Oberfläche entsteht. Selbstverständlich wird vorhandener Holzwurm behandelt, Beschläge werden repariert oder erneuert, die Leichtgängigkeit der Schubladen und Schlösser wird sichergestellt, und gegebenenfalls nehmen wir Innenausbauten vor.'
+				title: 'Weichholzmöbel',
+				text: 'Innen und außen geschliffen, Schellack-Grundierung, Sichtflächen fein nachgeschliffen. Abschluss mit Antikwachs und Politur für eine samtig glänzende Oberfläche. Holzwurm wird behandelt, Schubladen und Schlösser gangbar gemacht.'
 			},
 			{
-				title: 'Bearbeitung furnierter Möbel',
-				text: 'Entfernen des alten Schellacks durch Abwaschen, Schleifen der Oberflächen, Auffrischen der Furniere und abschließende Schellackpolitur für einen glänzenden Finish. Selbstverständlich kümmern wir uns auch um eventuell vorhandene Holzwurmbefälle, reparieren oder erneuern Beschläge, gewährleisten die Leichtgängigkeit von Schubladen und Schlössern und nehmen gegebenenfalls Innenausbauten vor.'
+				title: 'Furnierte Möbel',
+				text: 'Alten Schellack abgewaschen, Flächen geschliffen, Furniere aufgefrischt. Abschließende Schellackpolitur. Beschläge repariert oder erneuert. Innenausbauten auf Wunsch.'
+			},
+			{
+				title: 'Lampen & Elektrik',
+				text: 'Alle alten Lampen werden neu elektrifiziert — ausschließlich VDE-geprüfte Teile. Stoffkabel auf Wunsch mit verstärktem Innenleben. Glasschirme gereinigt und geprüft.'
+			},
+			{
+				title: 'Nachhaltigkeit',
+				text: 'Wir verwenden so weit wie möglich vorhandene Teile: Beschläge, Schlösser, Altholz. Kein Ablaugen, kein Abbeizen — nur Handarbeit. Versand mit recycelten Kartonagen und Papierklebeband.'
 			}
 		],
-		RESTORE_CONTACT_TITLE: 'Fragen? Lassen Sie sich unverbindlich beraten',
-		RESTORE_CONTACT_TEXT: 'Einfach dit Telefon zücken oder ne Mail abdrücken, wir stehen bereit fürn entspannten Schnack. Keen Hokuspokus, versprochen',
-		RESTORE_CONTACT: '',
-		LAMP_HEADLINE: 'Beleuchtung der besonderen Art Vielfalt und Einzigartigkeit unsere Lampenwelt',
-		LAMP_FEATURES: [
-			{
-				title: 'Alte Lampengläser',
-				text: 'Wir führen ausgewählte alte Lampengläser, die teilweise mehr als 100 Jahre alt sind. Die Schirme sind gebraucht aber nicht defekt. Minimale Abplatzer am Glashalter sind nach jahrelangen Gebrauch als normal anzusehen. Weitere Einzelstücke können Sie in unseren Ausstellungsräumen betrachten',
-				href: 'https://antik70.de/shop/de/lampenglaeser/antike-lampenschirme',
-				cta: 'Alte Lampenschirme'
-			},
-			{
-				title: 'Glasschirm Ersatzglas Lampenglas',
-				text: 'Klassische Formen in opal, diverse Farben, spezielle Oberflächen und verschiedene Größen der einzelnen Modelle ergeben eine ungeahnte Vielfalt zur Bestückung Ihrer Lampengestelle.',
-				href: 'https://antik70.de/shop/lampenglaeser',
-				cta: 'Lampengläser & Ersatzschirme'
-			},
-			{
-				title: 'Tiffanylampen',
-				text: 'Für Viele die Königsdisziplin der Lichtkunst. Tiffanylampen für Tisch, Decke, Wand und Boden; jeweils in höchster Perfektion gearbeitete Schirme, die den originalen Vorbildern zur Ehre gereichen. Wir bieten einige ausgewählte Lampen mit Tiffanyschirmen an',
-				href: 'https://antik70.de/shop/de/beleuchtung/tiffany-leuchten',
-				cta: 'Lampenmodelle in unserer Ausstellung'
-			}
-		],
+		RESTORE_CONTACT_TITLE: 'Interesse? Einfach melden.',
+		RESTORE_CONTACT_TEXT:
+			'Kein Formular, kein Hokuspokus. Rufen Sie an oder schreiben Sie eine Mail — wir antworten persönlich und beraten unverbindlich.',
+		ABOUT_HEADLINE: 'Seit 1991 in Berlin-Kreuzberg',
+		ABOUT_TEXT:
+			'Antik70 ist ein kleines Team mit vielen individuellen Stärken, die wir seit mehr als 30 Jahren bündeln. Wir waren lange ein klassischer Laden — jetzt arbeiten wir auf Anfrage. Wir suchen, restaurieren und vermitteln Möbel und Lampen an Menschen, die etwas Besonderes suchen.',
+		ABOUT_TEXT_2:
+			'Unser Atelier befindet sich weiterhin in der Gneisenaustraße 70 in Berlin-Kreuzberg. Besuche nach Vereinbarung sind herzlich willkommen.',
 		NAVI_LINKS: [
 			{
-				label: 'Lampen',
-				href: '/#lampen'
+				label: 'Fundstücke',
+				href: '/#fundstuecke'
 			},
 			{
-				label: 'Restaurationen',
-				href: '/#restaurationen'
+				label: 'Restaurierung',
+				href: '/#restaurierung'
 			},
 			{
-				label: 'Unsere Geschichte',
-				href: '/#antik70'
+				label: 'Über uns',
+				href: '/#ueber-uns'
+			},
+			{
+				label: 'Kontakt',
+				href: '/#kontakt'
 			}
 		],
 		FOOTER_LINKS: {
 			Antik70: [
-				{ name: 'Kontakt', href: 'https://antik70.de/shop/de/kontakt' },
-				{ name: 'Über uns', href: '/#antik70' },
+				{ name: 'Über uns', href: '/#ueber-uns' },
+				{ name: 'Kontakt', href: '/#kontakt' },
 				{ name: 'Impressum', href: 'https://antik70.de/shop/de/Impressum' }
 			],
-			'Unser Shop': [
-				{ name: 'Antike Möbel', href: 'https://antik70.de/shop/de/antike-moebel' },
-				{ name: 'Lampengläser', href: 'https://antik70.de/shop/lampenglaeser' },
-				{ name: 'Sonderangebote', href: 'https://antik70.de/shop/raritaeten' }
-			],
-			Beleuchtung: [
-				{ name: 'Glasschirme Opal', href: 'https://antik70.de/shop/lampenglaeser/glasschirme-opal' },
-				{ name: 'Alte Lampengläser', href: 'https://antik70.de/shop/de/lampenglaeser/antike-lampenschirme' },
-				{ name: 'Tiffany Leuchten', href: 'https://antik70.de/shop/de/beleuchtung/tiffany-leuchten' }
+			Leistungen: [
+				{ name: 'Fundstücke', href: '/#fundstuecke' },
+				{ name: 'Restaurierung', href: '/#restaurierung' },
+				{ name: 'Lampen', href: '/#fundstuecke' }
 			],
 			Informationen: [
-				{ name: 'Zahlarten & Versandkosten', href: 'https://antik70.de/shop/de/Liefer-und-Versandkosten' },
-				{ name: 'Unsere AGBs', href: 'https://antik70.de/shop/de/Unsere-AGB' },
-				{ name: 'Widerrufsrecht', href: 'https://antik70.de/shop/de/Widerrufsrecht' }
+				{ name: 'Datenschutz', href: 'https://antik70.de/shop/de/Datenschutzerklaerung' },
+				{ name: 'Impressum', href: 'https://antik70.de/shop/de/Impressum' }
 			]
 		},
-
-		OPEN_HOURS: 'Öffnungszeiten',
+		OPEN_HOURS: 'Atelier-Besuche',
 		OPEN_HOURS_1: 'Montag bis Freitag',
-		OPEN_HOURS_2: '11:00 - 18:00 Uhr',
-		OPEN_HOURS_3: 'Neu: Samstag',
-		OPEN_HOURS_4: '11:00 - 14:00 Uhr'
+		OPEN_HOURS_2: 'nach Vereinbarung',
+		OPEN_HOURS_3: 'Samstag',
+		OPEN_HOURS_4: 'nach Vereinbarung'
 	}
 };

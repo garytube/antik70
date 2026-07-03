@@ -3,7 +3,6 @@
 	import Hero from '$section/Hero.svelte';
 	import RepairHighlight from '$section/RepairHighlight.svelte';
 	import AboutUs from '$section/AboutUs.svelte';
-
 	import Restaurationen from '$section/Restaurationen.svelte';
 	import { dev } from '$app/environment';
 </script>
@@ -12,17 +11,16 @@
 	{#if dev}
 		<title>Antik70 - DEVELOPMENT SERVER</title>
 	{:else}
-		<title>Antik70 - Zeitlose Eleganz</title>
+		<title>Antik70 - Zeitlose Stücke aus Berlin</title>
 	{/if}
 	<meta
 		name="description"
-		content="Jedes Möbelstück erzählt eine Geschichte vergangener Epochen, mit Liebe restauriert und bereit, Ihr Zuhause mit zeitloser Eleganz zu schmücken. Tauchen Sie ein in unsere Welt, in der Geschichte und Stil sich vereinen. "
+		content="Antik70 findet, restauriert und verkauft einzigartige Antiquitäten, Möbel und Lampen aus Berlin-Kreuzberg. Kein Shop — alles auf Anfrage. Seit 1991."
 	/>
 </svelte:head>
 
 <Hero id="home" />
-<Lampenwelt id="lampen" />
-
+<Lampenwelt id="fundstuecke" />
 <RepairHighlight />
-<Restaurationen id="restaurationen" />
-<AboutUs id="antik70" />
+<Restaurationen id="restaurierung" />
+<AboutUs id="ueber-uns" />
