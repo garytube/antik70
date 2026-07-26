@@ -3,6 +3,7 @@
 	import Hero from '$section/Hero.svelte';
 	import RepairHighlight from '$section/RepairHighlight.svelte';
 	import AboutUs from '$section/AboutUs.svelte';
+	import ClosingSale from '$section/ClosingSale.svelte';
 
 	import Restaurationen from '$section/Restaurationen.svelte';
 	import { dev } from '$app/environment';
@@ -21,6 +22,7 @@
 </svelte:head>
 
 <Hero id="home" />
+<ClosingSale />
 <Lampenwelt id="lampen" />
 
 <RepairHighlight />
