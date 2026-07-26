@@ -23,6 +23,13 @@
 					ANTIK70 schließt seine Türen. Entdecken Sie besondere Einzelstücke und sichern Sie sich
 					unsere Sonderkonditionen.
 				</p>
+				<a
+					href="/shop"
+					class="mt-6 inline-flex items-center gap-2 rounded-xl bg-highlight px-5 py-3 font-semibold text-primary-DARK transition hover:bg-white focus:ring-2 focus:ring-highlight focus:ring-offset-2 focus:ring-offset-primary-DARK focus:outline-none"
+				>
+					Zum Online Shop
+					<span aria-hidden="true">→</span>
+				</a>
 			</div>
 
 			<div class="rounded-2xl border border-white/15 bg-white/[0.07] p-6 backdrop-blur-sm sm:p-8">
@@ -40,7 +47,7 @@
 						</p>
 						<a
 							href="mailto:info@antik70.de?subject=Anfrage%20zu%20Lieferm%C3%B6glichkeit%20und%20Sonderkonditionen"
-							class="mt-6 inline-flex items-center gap-2 rounded-xl bg-highlight px-5 py-3 font-semibold text-primary-DARK transition hover:bg-white focus:ring-2 focus:ring-highlight focus:ring-offset-2 focus:ring-offset-primary-DARK focus:outline-none"
+							class="mt-6 inline-flex items-center gap-2 rounded-xl bg-primary-DARK px-5 py-3 font-semibold text-highlight transition hover:bg-white hover:text-primary-DARK focus:ring-2 focus:ring-highlight focus:ring-offset-2 focus:ring-offset-primary-DARK focus:outline-none"
 						>
 							info@antik70.de
 							<span aria-hidden="true">→</span>
